@@ -4,6 +4,7 @@
 
 //popup signin block
 jQuery(document).ready(function($){
+
 	var $form_modal = $('.cd-user-modal'),
 		$form_login = $form_modal.find('#cd-login'),
 		$form_signup = $form_modal.find('#cd-signup'),
@@ -93,6 +94,15 @@ jQuery(document).ready(function($){
 	$form_signup.find('input[type="submit"]').on('click', function(event){
 		event.preventDefault();
 		$form_signup.find('input[type="email"]').toggleClass('has-error').next('span').toggleClass('is-visible');
+	});
+
+	$('.slick-slider').slick({
+		autoplay: true,
+		autoplaySpeed: 1000,
+		arrows: false,
+		dots: true,
+		speed: 1000,
+		infinite: true
 	});
 
 });
