@@ -1,5 +1,6 @@
 //= ../libs/jquery/jquery-3.3.1.min.js
 //= ../libs/slick/slick.min.js
+//= ../libs/jquery.rateit/scripts/jquery.rateit.min.js
 
 
 //popup signin block
