@@ -97,14 +97,28 @@ jQuery(document).ready(function($){
 		$form_signup.find('input[type="email"]').toggleClass('has-error').next('span').toggleClass('is-visible');
 	});
 
+// главный слайдер на главной странице
+
 	$('.slick-slider').slick({
-		autoplay: true,
+		autoplay: false,
 		autoplaySpeed: 1000,
 		arrows: false,
 		dots: true,
 		speed: 1000,
 		infinite: true
 	});
+
+// переключение валют в шапке
+
+	$('.currency__switcher').click(function() {
+		$(this).toggleClass('active').next().slideToggle();
+	});
+
+	$('.currency-list li').click(function() {
+		$('.currency__switcher').html($(this).html()).toggleClass('active');
+		$(this).parent().slideUp();
+		
+	})
 
 });
 
