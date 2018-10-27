@@ -115,9 +115,23 @@ jQuery(document).ready(function($){
 	});
 
 	$('.currency-list li').click(function() {
+		var currency = $('.currency__switcher').html();
 		$('.currency__switcher').html($(this).html()).toggleClass('active');
-		$(this).parent().slideUp();
+		$(this).html(currency).parent().slideUp();
 		
+	});
+
+// переключение языков в шапке
+
+	$('.language__switcher').click(function() {
+		$(this).toggleClass('active').next().fadeToggle();
+	});
+
+	$('.language-list li').click(function() {
+		var language = $($(this).parent().prev().html());
+		$(this).parent().prev().html($(this).html());
+		$(this).html(language).parent().fadeToggle();
+
 	})
 
 });
