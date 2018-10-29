@@ -1,0 +1,92 @@
+
+@import '../base/_variables.sass'
+	
+/* main menu */
+
+.header-bottom-nav
+	nav
+		background-color: $black-five
+		position: relative
+		width: 100%
+
+.main-menu
+	display: flex
+
+.main-menu__item
+	padding: 0 1.25%
+
+.main-menu__link
+	color: $white-four
+	display: block
+	font:
+		family: raleway
+		size: .857em
+		weight: 500
+	letter-spacing: 0.4px
+	line-height: 3.74rem
+	text-transform: uppercase
+	width: 100%
+	&:hover
+		color: $warm-grey
+
+.contact-phone
+	position: absolute
+	right: 15px
+	top: 35%
+	span
+		color: $pinkish-grey
+		font-size: .857em
+		text-transform: uppercase
+
+.main-menu__phone
+	background-color: $sunflower-yellow
+	color: $black-five
+	font:
+		size: .857em
+		weight: 500
+	margin-left: 5px
+	padding: 1px 8px
+
+.catalog
+	margin-right: 20px
+	position: relative
+	width: 23.7%
+
+.catalog-header
+	background-color: $sunflower-yellow
+	color: $dark-grey
+	font-weight: 500
+	letter-spacing: .4px
+	padding: 22px 20px
+	position: relative
+	text-transform: uppercase
+
+.icon-bars
+	&:before
+		font-size: 15px
+		position: absolute
+		right: 20px
+
+.catalog-wrap
+	position: absolute
+	width: 100%
+	z-index: 5
+
+.catalog-item
+	background-color: $white
+	border: 1px solid $white-two
+	border-bottom: none
+	padding: 17px 0 17px 50px
+	position: relative
+	&:hover
+		background-color: $pale-grey-three
+	&:last-child
+		border-bottom: 1px solid $white-two
+	a
+		color: $brownish-grey
+	.icon
+		font-size: 20px
+		left: 15px
+		position: absolute
+	.icon-mobile
+		font-size: 33px

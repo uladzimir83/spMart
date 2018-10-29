@@ -105,7 +105,8 @@ jQuery(document).ready(function($){
 		arrows: false,
 		dots: true,
 		speed: 1000,
-		infinite: true
+		infinite: true,
+		adaptiveHeight: true
 	});
 
 // переключение валют в шапке

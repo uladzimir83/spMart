@@ -240,4 +240,9 @@
     content: $icon-shopping-basket; 
   }
 }
+.icon-mobile {
+  &:before {
+    content: $icon-mobile; 
+  }
+}
 

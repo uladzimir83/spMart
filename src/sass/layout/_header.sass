@@ -82,6 +82,8 @@
 	font-size: 12px
 	margin-right: 6px
 
+/* block for choosing language */
+
 .language-block
 	position: relative
 
@@ -122,6 +124,8 @@
 	top: 24px
 	z-index: 10
 
+/* button for download app from store */
+
 .app-link
 	background-color: rgba(0, 0, 0, .1)
 	border-radius: 2px
@@ -137,6 +141,8 @@
 	text-transform: uppercase
 
 /* -----------------  begin middle line of header  ---------------- */
+
+/* .header-bottom consist from 2 parts: line with logo, search, cart and line with main menu  */
 
 .header-bottom
 	background-color: $dark-sky-blue
@@ -156,103 +162,3 @@
 	span
 		vertical-align: super
 
-/* search form and choose categories */
-
-.header-search
-	position: relative
-	width: 60%
-
-.search-form__block
-	width: 100%
-	
-.search-form-input
-	border: none
-	border-radius: 2px
-	color: $dark-grey-two
-	font-size: 1.143em
-	padding: 13px 0 14px 14px
-	width: 100%
-
-.search-form-input::-webkit-input-placeholder
-	font-size: 12px
-	color: $greyish
-
-.search-form-input::-moz-placeholder
-	font-size: 12px
-	color: $greyish
-
-.search-form-input:-ms-input-placeholder
-	font-size: 12px
-	color: $greyish
-
-.search-form-input:-moz-placeholder
-	font-size: 12px
-	color: $greyish
-
-.search-form-submit
-	background-color: $mango
-	border: none
-	cursor: pointer
-	height: 100%
-	position: absolute
-	right: 0
-	top: 0
-	width: 46px
-
-.categories-form__block
-	border-left: 1px solid $white-two
-	height: 100%
-	position: absolute
-	right: 47px
-	top: 0
-	.icon
-		background-color: $white
-		height: 25px
-		position: absolute
-		right: 10px
-		top: 7px
-		transform: rotate(-90deg)
-		width: 10px
-		&:before
-			font-size: 16px
-
-.categories-form
-	border: none
-	color: $dark-grey-two
-	cursor: pointer
-	font:
-		family: roboto
-		size: .929em
-		weight: 500
-	height: 100%
-	outline: none
-	padding-left: 8px
-
-/* header cart and counter */
-
-.header-cart
-	background-color: $white
-
-.header-cart__link
-	border-right: 1px solid $white-three
-	display: inline-block
-	height: 46px
-	padding: 13px 0
-	text-align: center
-	width: 46px
-	&:hover .icon-shopping-bag
-		color: $cornflower-blue
-
-.icon-shopping-bag
-	color: $black-three
-	font-size: 20px
-	transition: color .4s ease-in-out
-
-.header-cart__count
-	display: inline-block
-	font-size: 12px
-	padding: 0 10px
-	vertical-align: super
-
-.header-cart__total
-	color: $dark-sky-blue

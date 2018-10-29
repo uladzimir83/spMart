@@ -4,12 +4,18 @@
 @import "base/_reset.sass"
 @import "base/_variables.sass"
 @import "base/_tipography.sass"
-@import "sign.css"
-@import "../libs/slick/slick.scss"
 @import "base/_fonts.sass"
 @import "icomoon"
+
+@import "components/sign.css"
+@import "components/_search-form.sass"
+@import "components/_header-cart.sass"
+
+@import "../libs/slick/slick.scss"
 @import "../libs/jquery.rateit/scripts/rateit.css"
+
 @import "layout/header.sass"
+@import "layout/_main-menu.sass"
 @import "layout/grid.sass"
 
 
@@ -30,6 +36,17 @@ body
 	max-width: 100vw
 	min-width: 320px
 	max-height: 100vh
+
+
+.main-slider
+	margin: 20px 0 0 290px
+
+.slick-slider
+	height: 470px
+	img
+		height: 470px
+		width: 100%
+
 
 .product-rating
 	width: 315px

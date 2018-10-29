@@ -1,0 +1,77 @@
+
+@import "../base/_variables.sass"
+
+/* search form and choose categories */
+
+.header-search
+	margin-left: 130px
+	position: relative
+	width: 52.2%
+
+.search-form__block
+	width: 100%
+	
+.search-form-input
+	border: none
+	border-radius: 2px
+	color: $dark-grey-two
+	font-size: 1.143em
+	padding: 13px 0 14px 14px
+	width: 100%
+
+.search-form-input::-webkit-input-placeholder
+	font-size: 12px
+	color: $greyish
+
+.search-form-input::-moz-placeholder
+	font-size: 12px
+	color: $greyish
+
+.search-form-input:-ms-input-placeholder
+	font-size: 12px
+	color: $greyish
+
+.search-form-input:-moz-placeholder
+	font-size: 12px
+	color: $greyish
+
+.search-form-submit
+	background-color: $sunflower-yellow
+	border: none
+	cursor: pointer
+	height: 100%
+	position: absolute
+	right: 0
+	top: 0
+	width: 46px
+
+/* dropdown block with categories */
+
+.categories-form__block
+	border-left: 1px solid $white-two
+	height: 100%
+	position: absolute
+	right: 47px
+	top: 0
+	.icon
+		background-color: $white
+		height: 25px
+		position: absolute
+		right: 10px
+		top: 7px
+		transform: rotate(-90deg)
+		width: 10px
+		&:before
+			font-size: 16px
+
+.categories-form
+	border: none
+	color: $dark-grey-two
+	cursor: pointer
+	font:
+		family: roboto
+		size: .929em
+		weight: 500
+	height: 100%
+	outline: none
+	padding-left: 8px
