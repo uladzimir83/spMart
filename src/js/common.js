@@ -1,6 +1,7 @@
 //= ../libs/jquery/jquery-3.3.1.min.js
 //= ../libs/slick/slick.min.js
 //= ../libs/jquery.rateit/scripts/jquery.rateit.min.js
+//= countdown.js
 
 
 //popup signin block
@@ -104,10 +105,18 @@ jQuery(document).ready(function($){
 		autoplaySpeed: 1000,
 		arrows: false,
 		dots: true,
-		speed: 1000,
-		infinite: true,
-		adaptiveHeight: true
+		speed: 1000
 	});
+
+//слайдер в боковой колонке .hot-deals
+
+	$('.hot-deals__slider').slick({
+		autoplay: false,
+		autoplaySpeed: 1000,
+		arrows: true,
+		dots: false,
+		speed: 1000
+	})
 
 // переключение валют в шапке
 
@@ -130,7 +139,7 @@ jQuery(document).ready(function($){
 
 	$('.language-list li').click(function() {
 		var language = $($(this).parent().prev().html());
-		$(this).parent().prev().html($(this).html());
+		$(this).parent().prev().html($(this).html()).toggleClass('active');
 		$(this).html(language).parent().fadeToggle();
 
 	})

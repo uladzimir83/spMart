@@ -1,0 +1,92 @@
+
+@import "../base/_variables.sass"
+
+
+.shop-grid__sidebar
+	margin-right: 35px
+	width: 265px
+
+/* карточка товара вертикальная удлиненная */	
+
+.grid-item__vertical
+	border: 1px solid $white-three
+	border-radius: 2px
+	margin-bottom: 33px
+
+/* серая шапка карточки товара */	
+
+.item-header__grey
+	background-color: $white-four
+	border-bottom: 1px solid $white-three
+	border-top: 1px solid $white-three
+	height: 50px
+	margin: -1px 0 20px
+	h3
+		color: $black-six
+		font:
+			famly: raleway
+			size: 1.071em
+			weight: 600
+		line-height: 50px
+		margin-left: 25px
+		text-transform: uppercase
+
+
+/* обертка изображения слайдера .hot-deals */
+
+.hot-deals__img
+	margin-bottom: 26px
+	text-align: center
+
+/* описание товара на карточке товара .hot-deals */
+
+.hot-deals
+	.product-info
+		text-align: center
+
+/* блок с новыми товарами. .sidebar-products__new */
+
+.sidebar-products__new
+	.item-header__grey
+		margin-bottom: 0
+
+.sidebar-products__items
+	border-bottom: 1px solid $white-three
+	display: flex
+	align-items: flex-end
+	&:last-child
+		border-bottom: none
+	.product-info
+		flex: 1
+		text-align: left
+	.product-rating
+		margin: -20px 0 30px
+
+.sidebar-banner
+	img
+		display: block
+
+
+
+
+#countdown
+	border-top: 1px solid $white-three
+	display: flex
+	width: 100%
+
+.countdown-items
+	background-color: $white-five
+	border-right: 1px solid $white-three
+	flex: 1
+	font-size: 13px
+	padding: 13px 17px
+	text-align: center
+	&:last-child
+		border: none
+	span
+		color: $black-seven
+		display: inline-block
+		margin-bottom: 9px
+
+.count-text
+	color: $warm-grey-four

@@ -14,6 +14,7 @@
 
 .main-menu__item
 	padding: 0 1.25%
+	position: relative
 
 .main-menu__link
 	color: $white-four
@@ -73,20 +74,27 @@
 	z-index: 5
 
 .catalog-item
+	align-items: center
 	background-color: $white
 	border: 1px solid $white-two
 	border-bottom: none
-	padding: 17px 0 17px 50px
+	color: $brownish-grey
+	display: flex
+	padding-left: 44px
 	position: relative
 	&:hover
 		background-color: $pale-grey-three
 	&:last-child
 		border-bottom: 1px solid $white-two
 	a
-		color: $brownish-grey
+		color: inherit
+		display: block
+		height: 48px
+		line-height: 48px
+		width: 100%
 	.icon
-		font-size: 20px
-		left: 15px
+		left: 20px
 		position: absolute
 	.icon-mobile
-		font-size: 33px
+		font-size: 25px
+		top: 9px

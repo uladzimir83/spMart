@@ -1,0 +1,38 @@
+@import '../base/_variables.sass'
+
+.badge
+	color: $white
+	position: absolute
+	text-transform: uppercase
+
+/* badges from main menu item */
+
+.main-menu__item
+	.badge
+		font:
+			family: raleway
+			size: .786em
+			weight: 600
+		right: 15px
+		padding: 5px 7px
+		z-index: 200
+		top: -14px
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			width: 0
+			height: 0
+			border-style: solid
+			border-width: 6.7px 5px 0 5px
+			bottom: -6px
+
+	.badge-hot
+		background-color: $pastel-red
+		&:after
+			border-color: $pastel-red transparent transparent transparent
+
+	.badge-new
+		background-color: $tealish
+		&:after
+			border-color: $tealish transparent transparent transparent

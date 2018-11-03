@@ -161,8 +161,8 @@
 										</li>
 										<li class="main-menu__item"><a href="#" class="main-menu__link">home</a></li>
 										<li class="main-menu__item"><a href="#" class="main-menu__link">shop</a></li>
-										<li class="main-menu__item"><a href="#" class="main-menu__link">fashion</a></li>
-										<li class="main-menu__item"><a href="#" class="main-menu__link">elecronics</a></li>
+										<li class="main-menu__item"><a href="#" class="main-menu__link">fashion</a><span class="badge badge-hot">hot</span></li>
+										<li class="main-menu__item"><a href="#" class="main-menu__link">elecronics</a><span class="badge badge-new">new</span></li>
 										<li class="main-menu__item"><a href="#" class="main-menu__link">pages</a></li>
 										<li class="main-menu__item"><a href="#" class="main-menu__link">features</a></li>
 										<li class="main-menu__item"><a href="#" class="main-menu__link">blog</a></li>
@@ -181,40 +181,28 @@
 
 			<main>
 
-				<div class="container">
+				<div class="main-slider">
 
-					<div class="main-slider">
+					<div class="container">
 
 						<div class="slick-slider">
 
-							<div class="slick-slider-item">
-
-								<a href="#">
+							<div class="slick-slider__item">
+								<a href="#" class="slider-link__wrapper">
 									<img src="img/main_slider/main_slider_1.jpg" alt="new man collection">
-									.slick-slider__content
-
 								</a>
-
 							</div>
 
-							<div class="slick-slider-item">
-
-								<a href="#">
+							<div class="slick-slider__item">
+								<a href="#" class="slider-link__wrapper">
 									<img src="img/main_slider/main_slider_2.jpg" alt="new man collection">
-									.slick-slider__content
-
 								</a>
-
 							</div>
 
-							<div class="slick-slider-item">
-
-								<a href="#">
+							<div class="slick-slider__item">
+								<a href="#" class="slider-link__wrapper">
 									<img src="img/main_slider/main_slider_3.jpg" alt="new man collection">
-									.slick-slider__content
-
 								</a>
-
 							</div>
 
 						</div>	<!-- end .slick-slider -->
@@ -229,33 +217,20 @@
 					<div class="top-offers">
 
 						<div class="top-offers-items">
-							<a href="#"><img src="img/best_offers/offer_1.jpg" alt="fashion offers">
-								<div class="top-offers-inner">
-									<div class="top-offers-header">big offer day</div>
-									<span class="top-offers-badge lime-badge">Extra 25% Off</span>
-									<span>At $199.00</span>
-								</div>
+							<a href="#">
+								<img src="img/best_offers/offer_1.jpg" alt="fashion offers">
 							</a>
 						</div>
 
 						<div class="top-offers-items">
-							<a href="#"><img src="img/best_offers/offer_2.jpg" alt="canon eos offers">
-								<div class="top-offers-inner">
-									<div class="top-offers-header">canon eos</div>
-									<span>UPTO 30% FLAT OFFER!</span>
-									<span class="top-offers-badge green-badge">Special Offer!</span>
-								</div>
+							<a href="#">
+								<img src="img/best_offers/offer_2.jpg" alt="canon eos offers">
 							</a>
 						</div>
 
 						<div class="top-offers-items">
-							<a href="#"><img src="img/best_offers/offer_3.jpg" alt="led tv offers">
-								<div class="top-offers-inner">
-									<div class="top-offers-header">ledtv 920</div>
-									<div>oneday sale</div>
-									<span>New Arrivals</span>
-									<span class="top-offers-badge white-badge">Only $799</span>
-								</div>
+							<a href="#">
+								<img src="img/best_offers/offer_3.jpg" alt="led tv offers">
 							</a>
 						</div>
 
@@ -263,6 +238,8 @@
 				</div>	<!-- end .container(top-offers) -->
 
 				<!-- 	end top offers bar -->
+
+
 
 				<!-- begin shop grid -->
 
@@ -272,34 +249,203 @@
 
 						<!-- sidebar begin -->
 
+								<!-- sidebar slider hot-deals -->
+
 						<aside class="shop-grid__sidebar">
 
-							<div class="grid-item__vertical">
+							<div class="grid-item__vertical sidebar__hot-deals">
 
 								<header class="item-header__grey">
 									<h3>hot deals</h3>
 								</header>
 
-								<div class="hot-deals">
+								<div class="hot-deals__slider">
 
-									<div class="hot-deals-img"><img src="img/hot_deals/watch_offer_1.jpg" alt="watch"></div>
-									
-									<div class="hot-deals-info">
-										<a href="#" class="product-name">Zexon Brand Men’s watch</a>
-										<div class="product-price">
-											<i class="icon icon-dollar"></i>124.00
+									<div class="hot-deals">
+
+										<div class="hot-deals__img"><img src="img/hot_deals/watch_offer.jpg" alt="watch"></div>
+											
+											<div class="product-info">
+												<a href="#" class="product-name">Zexon Brand Men’s watch</a>
+												<div class="product-price">
+													<i class="icon icon-dollar"></i>124.00
+												</div>
+												<div class="product-rating">
+													<div class="rating"></div>
+												<div class="rating-fill rating-fill4"></div>
+											</div>
+
 										</div>
-										<div class="product-rating">
-											<div class="rating"></div>
-											<div class="rating-fill"></div>
+			
+									</div>
+
+									<div class="hot-deals">
+
+											<div class="hot-deals__img"><img src="img/hot_deals/watch_offer_1.jpg" alt="watch"></div>
+												
+												<div class="product-info">
+													<a href="#" class="product-name">Zexon Brand Men’s watch</a>
+													<div class="product-price">
+														<i class="icon icon-dollar"></i>124.00
+													</div>
+													<div class="product-rating">
+														<div class="rating"></div>
+													<div class="rating-fill rating-fill4"></div>
+												</div>
+	
+											</div>
+				
+										</div>
+
+										<div class="hot-deals">
+
+												<div class="hot-deals__img"><img src="img/hot_deals/watch_offer_2.jpg" alt="watch"></div>
+													
+													<div class="product-info">
+														<a href="#" class="product-name">Zexon Brand Men’s watch</a>
+														<div class="product-price">
+															<i class="icon icon-dollar"></i>124.00
+														</div>
+														<div class="product-rating">
+															<div class="rating"></div>
+														<div class="rating-fill rating-fill4"></div>
+													</div>
+		
+												</div>
+					
+											</div>
+
+								</div>
+
+								
+
+								<div class="hot-deals-countdown">
+									<div id="countdown">
+										<div class="countdown-items">
+											<span class="days"></span>
+											<div class="count-text">Days</div>
+										</div>
+										<div class="countdown-items">
+											<span class="hours"></span>
+											<div class="count-text">Hrs</div>
+										</div>
+										<div class="countdown-items">
+											<span class="minutes"></span>
+											<div class="count-text">Mins</div>
+										</div>
+										<div class="countdown-items">
+											<span class="seconds"></span>
+											<div class="count-text">Sec</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+							<!-- end sidebar slider hot-deals -->
+
+							<!-- sidebar new products -->
+
+							<div class="grid-item__vertical sidebar-products__new">
+
+								<header class="item-header__grey">
+									<h3>new products</h3>
+								</header>
+
+								<div class="sidebar-products__list">
+
+									<div class="sidebar-products__items">
+										<div class="product-image">
+											<a href="#"><img src="img/grid_img/for_home/fh6_1_min.jpg" alt="heater"></a>
+										</div>
+										<div class="product-info">
+											<a href="" class="product-name">Yunique Plus Hair Styler</a>
+											<div class="product-price"><i class="icon icon-dollar"></i>56.00</div>
+											<div class="product-rating">
+												<div class="rating"></div>
+												<div class="rating-fill"></div>
+											</div>
+										</div>
+									</div>
+
+									<div class="sidebar-products__items">
+										<div class="product-image">
+											<a href="#"><img src="img/grid_img/electronic/e5_1_min.jpg" alt="audio cable"></a>
+										</div>
+										<div class="product-info">
+											<a href="" class="product-name">Cybershot Digital cable</a>
+											<div class="product-price"><i class="icon icon-dollar"></i>49.00</div>
+											<div class="product-rating">
+												<div class="rating"></div>
+												<div class="rating-fill rating-fill3"></div>
+											</div>
+										</div>
+									</div>
+
+									<div class="sidebar-products__items">
+										<div class="product-image">
+											<a href="#"><img src="img/grid_img/fashion/f3_4_min.jpg" alt="Eau de Toilette"></a>
+										</div>
+										<div class="product-info">
+											<a href="" class="product-name">Skinn Celeste Woman</a>
+											<div class="product-price"><i class="icon icon-dollar"></i>75.00</div>
+											<div class="product-rating">
+												<div class="rating"></div>
+												<div class="rating-fill rating-fill4"></div>
+											</div>
+										</div>
+									</div>
+
+									<div class="sidebar-products__items">
+										<div class="product-image">
+											<a href="#"><img src="img/grid_img/phone/ph1_3_min.jpg" alt="iphone"></a>
+										</div>
+										<div class="product-info">
+											<a href="" class="product-name">Apple iphone 5s - 16GB</a>
+											<div class="product-price"><i class="icon icon-dollar"></i>175.00</div>
+											<div class="product-rating">
+												<div class="rating"></div>
+												<div class="rating-fill"></div>
+											</div>
+										</div>
+									</div>
+
+									<div class="sidebar-products__items">
+										<div class="product-image">
+											<a href="#"><img src="img/grid_img/fashion/f5_1_min.jpg" alt="sneaskers"></a>
+										</div>
+										<div class="product-info">
+											<a href="" class="product-name">Black Casual Sneeker</a>
+											<div class="product-price"><i class="icon icon-dollar"></i>105.00</div>
+											<div class="product-rating">
+												<div class="rating"></div>
+												<div class="rating-fill rating-fill4"></div>
+											</div>
+										</div>
+									</div>
+
+									<div class="sidebar-products__items">
+										<div class="product-image">
+											<a href="#"><img src="img/grid_img/phone/ph3_3_min.jpg" alt="huawei"></a>
+										</div>
+										<div class="product-info">
+											<a href="" class="product-name">Huwai honour U19</a>
+											<div class="product-price"><i class="icon icon-dollar"></i>259.00</div>
+											<div class="product-rating">
+												<div class="rating"></div>
+												<div class="rating-fill rating-fill4"></div>
+											</div>
 										</div>
 									</div>
 
 								</div>
 
-								<div class="hot-deals-timer"></div>
-
 							</div>
+
+							<div class="grid-item__vertical sidebar-banner">
+								<a href="#"><img src="img/best_offers/offer_8.jpg" alt="fashion woman banner"></a>
+							</div>
+								
 
 						</aside>
 
