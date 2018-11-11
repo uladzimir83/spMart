@@ -1,0 +1,28 @@
+@import "../base/_variables.sass"
+	
+.user-action__list
+	background-color: #fff
+	bottom: 104px
+	display: none
+	position: absolute
+	width: 100%
+
+.user-action__item
+	border: 1px solid $white-four
+	border-left: none
+	display: inline-block
+	height: 35px
+	line-height: 35px
+	width: 25%
+	&:last-child
+		border-right: none
+	&:hover
+		background-color: $dark-sky-blue
+		border-color: $dark-sky-blue
+	&:hover i
+		color: $white
+	a
+		display: block
+	i
+		color: $black-six
+		margin: 0

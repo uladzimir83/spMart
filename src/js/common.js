@@ -139,7 +139,7 @@ $('.sidebar-news__slider').slick({
 
 // слайдер секции new arrivals
 
-$('.product-carousel').slick({
+$('.new-arrivals__carousel').slick({
 	autoplay: false,
 	autoplaySpeed: 1000,
 	arrows: true,
@@ -147,6 +147,15 @@ $('.product-carousel').slick({
 	slidesToScroll: 1,
 	speed: 1000
 });
+
+$('.best-sellers__carousel').slick({
+	autoplay: false,
+	autoplaySpeed: 1000,
+	arrows: true,
+	speed: 1000
+});
+
+
 
 
 // переключение валют в шапке

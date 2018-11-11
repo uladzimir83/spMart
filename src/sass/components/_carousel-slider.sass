@@ -1,6 +1,8 @@
 
 @import "../base/_variables.sass"
 
+/* стили главного слайдера */
+
 .main-slider
 	margin-bottom: 2.214em
 	.slick-slider
@@ -60,6 +62,7 @@
 .slider-link-wrapper
 	position: relative
 
+/* слайдер в разделе hot-deals вверху сайдбара */
 
 .hot-deals__slider,
 .sidebar-news__slider
@@ -85,3 +88,46 @@
 .sidebar-news__slider
 	.slick-next
 		transform: rotate(180deg)
+
+/* слайдер в разделе testimonials середина сайдбара */
+
+.sidebar-testim__slider
+	.slick-dots
+		bottom: -45px
+		transform: translateX(-50%)
+	button
+		background-color: $pinkish-grey-two
+	.slick-active
+		button
+			background-color: $dark-sky-blue
+
+/* стрелки слайдеров. общие стили для раздела shop grid main */
+
+.shop-grid__main
+	.slick-arrow
+		color: transparent
+		cursor: pointer
+		background: url(../img/slider_arrow.png) 48% 48% no-repeat
+		border: 1px solid $white-three
+		border-radius: 2px
+		height: 24px
+		outline: none
+		padding: 0
+		position: absolute
+		right: 0
+		top: -42px
+		width: 24px
+	.slick-prev
+		right: 30px
+	.slick-next
+		transform: rotate(180deg)
+
+/* слайдер в разделе new arrivals вверху главного раздела */
+
+.new-arrivals__carousel
+	.slick-list
+		margin: 0 -3px
+		padding: 0 1px
+	.slick-track
+		padding: 5px 0
+	

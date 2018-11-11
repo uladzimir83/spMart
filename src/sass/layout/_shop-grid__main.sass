@@ -3,19 +3,24 @@
 /* размер основного раздела */
 .shop-grid__main
 	width: calc(100% - 300px)
+	h2
+		margin: 5px 0 27px
 
-/* центрирование контента в карточках товара для раздела new arrivals */
+/* ----- NEW ARRIVALS ----- */
+
+/* карточка товара для раздела new arrivals */
 
 .new-arrivals
-	.grid-item__vertical
+	margin-bottom: 40px
+	.grid-item
 		margin-bottom: 0
 		border-left: none
 		position: relative
 		text-align: center
 		&:hover
 			box-shadow: 0px 2px 15px 0 rgba(0, 0, 0, 0.08)
-	h2
-		margin: 5px 0 27px
+		&:hover .user-action__list
+			display: block
 	.product-image
 		min-height: 225px
 
@@ -42,26 +47,69 @@
 		&:hover
 			color: $dark-sky-blue
 
-.product-carousel
-	.slick-list
-		margin: 0 -3px
-		padding: 0 1px
-	.slick-track
-		padding: 5px 0
-	.slick-arrow
-		color: transparent
-		cursor: pointer
-		background: url(../img/slider_arrow.png) 48% 48% no-repeat
+/* ----- END NEW ARRIVALS ----- */
+
+
+
+/* ----- SHOP GRID BANNER ----- */
+
+/* баннеры идущие после секции new arrivals */
+
+.shop-grid__banner
+	display: flex
+	justify-content: space-between
+	margin: 0 -2px 48px -2px
+
+/* ----- END SHOP GRID BANNER ----- */
+
+
+/* ----- END BEST SELLERS ----- */
+
+.best-sellers
+	.grid-item__row--outer
 		border: 1px solid $white-three
-		border-radius: 2px
-		height: 24px
-		outline: none
-		padding: 0
-		position: absolute
-		right: 0
-		top: -42px
-		width: 24px
-	.slick-prev
-		right: 30px
-	.slick-next
-		transform: rotate(180deg)
+		border-bottom: none
+		border-right: none
+		display: flex
+		flex-wrap: wrap
+
+
+.grid-item__row
+	border-right: 1px solid $white-three
+	border-bottom: 1px solid $white-three
+	border-radius: 2px
+	display: flex
+	justify-content: space-around
+	padding: 23px 20px 23px 0
+	position: relative
+	width: 50%
+
+.best-sellers
+	.product-image
+		margin-bottom: 0
+		max-width: 175px
+	.product-rating
+		margin: -20px 0
+	.product-info
+		align-items: flex-start
+		display: flex
+		flex-direction: column
+		margin-top: 15px
+
+.grid-item__btn
+	background-color: $white-six
+	border: 1px solid $white-three
+	border-radius: 2px
+	margin-top: 40px
+	a
+		color: $black-six
+		display: inline-block
+		font:
+			family: raleway
+			size: .786em
+			weight: 700
+		letter-spacing: .6px
+		padding: 14px 11px
+		text-transform: uppercase
+
+/* ----- END BEST SELLERS ----- */

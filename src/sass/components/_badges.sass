@@ -2,6 +2,7 @@
 
 .badge
 	color: $white
+	padding: 5px 7px
 	position: absolute
 	text-transform: uppercase
 
@@ -14,7 +15,6 @@
 			size: .786em
 			weight: 600
 		right: 15px
-		padding: 5px 7px
 		z-index: 200
 		top: -14px
 		&:after
@@ -27,12 +27,40 @@
 			border-width: 6.7px 5px 0 5px
 			bottom: -6px
 
-	.badge-hot
-		background-color: $pastel-red
-		&:after
-			border-color: $pastel-red transparent transparent transparent
+.badge-hot
+	background-color: $pastel-red
+	&:after
+		border-color: $pastel-red transparent transparent transparent
 
-	.badge-new
-		background-color: $tealish
-		&:after
-			border-color: $tealish transparent transparent transparent
+.badge-new
+	background-color: $tealish
+	&:after
+		border-color: $tealish transparent transparent transparent
+
+.badge-new__grid
+	background-color: $mango-two
+
+
+.shop-grid__main
+	.badge
+		border-radius: 2px
+		font:
+			family: roboto
+			size: 12px
+		text-transform: none
+
+/* раздел new arrivals */
+
+.new-arrivals
+	.badge
+		left: 10px
+		top: 10px
+
+/* раздел best sellers */
+
+.best-sellers
+	.badge
+		left: 15px
+		top: 15px
+
+	
