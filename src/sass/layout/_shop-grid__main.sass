@@ -1,0 +1,67 @@
+@import "../base/_variables.sass"
+
+/* размер основного раздела */
+.shop-grid__main
+	width: calc(100% - 300px)
+
+/* центрирование контента в карточках товара для раздела new arrivals */
+
+.new-arrivals
+	.grid-item__vertical
+		margin-bottom: 0
+		border-left: none
+		position: relative
+		text-align: center
+		&:hover
+			box-shadow: 0px 2px 15px 0 rgba(0, 0, 0, 0.08)
+	h2
+		margin: 5px 0 27px
+	.product-image
+		min-height: 225px
+
+/* шапка раздела */
+
+.shop-grid__header
+	position: relative
+
+/* навигация по категориям товара в разделе new arrivals */
+
+.new-arrivals__nav
+	position: absolute
+	right: 75px
+	top: 8px
+	li
+		display: inline-block
+	a
+		color: $warm-grey-four
+		font:
+			size: .857em
+			weight: 500
+		margin-left: 25%
+		text-transform: uppercase
+		&:hover
+			color: $dark-sky-blue
+
+.product-carousel
+	.slick-list
+		margin: 0 -3px
+		padding: 0 1px
+	.slick-track
+		padding: 5px 0
+	.slick-arrow
+		color: transparent
+		cursor: pointer
+		background: url(../img/slider_arrow.png) 48% 48% no-repeat
+		border: 1px solid $white-three
+		border-radius: 2px
+		height: 24px
+		outline: none
+		padding: 0
+		position: absolute
+		right: 0
+		top: -42px
+		width: 24px
+	.slick-prev
+		right: 30px
+	.slick-next
+		transform: rotate(180deg)

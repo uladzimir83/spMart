@@ -116,7 +116,38 @@ jQuery(document).ready(function($){
 		arrows: true,
 		dots: false,
 		speed: 1000
-	})
+	});
+
+// слайдер с отзывами в сайдбаре
+
+	$('.sidebar-testim__slider').slick({
+		autoplay: false,
+		autoplaySpeed: 1000,
+		arrows: false,
+		dots: true,
+		speed: 1000
+	});
+
+// слайдер с последними новостями
+
+$('.sidebar-news__slider').slick({
+	autoplay: false,
+	autoplaySpeed: 1000,
+	arrows: true,
+	speed: 1000
+});
+
+// слайдер секции new arrivals
+
+$('.product-carousel').slick({
+	autoplay: false,
+	autoplaySpeed: 1000,
+	arrows: true,
+	slidesToShow: 4,
+	slidesToScroll: 1,
+	speed: 1000
+});
+
 
 // переключение валют в шапке
 

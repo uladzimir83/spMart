@@ -20,6 +20,7 @@
 @import "layout/_main-menu.sass"
 @import "layout/grid.sass"
 @import "layout/_sidebar.sass"
+@import "layout/_shop-grid__main.sass"
 
 
 
@@ -44,6 +45,17 @@ img
 	height: auto
 	max-width: 100%
 
+h2
+	color: $black-six
+	font:
+		family: raleway
+		size: 1.125rem
+		weight: 600
+	text-transform: uppercase
+	a
+		color: inherit
+		outline: none
+
 
 /* top-offers - line under slider */
 
@@ -54,12 +66,6 @@ img
 	margin-right: 22px
 	&:last-child
 		margin-right: 0
-
-/* main grid of products */
-
-.shop-grid
-	display: flex
-	margin-top: 50px
 
 /* styles for product card */
 .product-name
@@ -81,7 +87,10 @@ img
 	width: 55px
 
 .product-image
-	padding: 12px 18px 15px
+	align-items: center
+	display: flex
+	margin-bottom: 26px
+	padding: 12px 18px 0
 
 /* styles star rating */
 
