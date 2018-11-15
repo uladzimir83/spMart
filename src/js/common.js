@@ -3,9 +3,13 @@
 //= ../libs/jquery.rateit/scripts/jquery.rateit.min.js
 //= countdown.js
 
+$(window).on("load",function(){
+	$(".cube-loader, #cube-loader").delay(100).fadeOut().remove();  
+});
 
 //popup signin block
 jQuery(document).ready(function($){
+
 
 	var $form_modal = $('.cd-user-modal'),
 		$form_login = $form_modal.find('#cd-login'),
@@ -139,7 +143,7 @@ $('.sidebar-news__slider').slick({
 
 // слайдер секции new arrivals
 
-$('.new-arrivals__carousel').slick({
+$('.product-carousel').slick({
 	autoplay: false,
 	autoplaySpeed: 1000,
 	arrows: true,
@@ -155,7 +159,23 @@ $('.best-sellers__carousel').slick({
 	speed: 1000
 });
 
+$('.categories-list').slick({
+	autoplay: false,
+	autoplaySpeed: 1000,
+	arrows: true,
+	slidesToShow: 10,
+	slidesToScroll: 1,
+	speed: 1000
+});
 
+$('.partners-list').slick({
+	autoplay: false,
+	autoplaySpeed: 1000,
+	arrows: true,
+	slidesToShow: 6,
+	slidesToScroll: 1,
+	speed: 1000
+});
 
 
 // переключение валют в шапке
@@ -182,7 +202,22 @@ $('.best-sellers__carousel').slick({
 		$(this).parent().prev().html($(this).html()).toggleClass('active');
 		$(this).html(language).parent().fadeToggle();
 
-	})
+	});
+
+
+
+	$('.categories-example__list').hide();
+  $('.categories-example__list:first').show();
+  $('.categories-list li:first').addClass('active');
+  $('.categories-list li').click(function(event) {
+    $('.categories-list li').removeClass('active');
+    $(this).addClass('active');
+    $('.categories-example__list').hide();
+
+    var selectTab = $(this).find('a').attr("href");
+
+    $(selectTab).fadeIn();
+  });
 
 });
 

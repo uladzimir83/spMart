@@ -1,17 +1,21 @@
 @import "../base/_variables.sass"
 
-/* размер основного раздела */
-.shop-grid__main
-	width: calc(100% - 300px)
+main
 	h2
 		margin: 5px 0 27px
 
-/* ----- NEW ARRIVALS ----- */
+/* размер основного раздела */
+.shop-grid__main
+	width: calc(100% - 300px)
 
-/* карточка товара для раздела new arrivals */
+/* стили для обертки карточки товара */
 
-.new-arrivals
-	margin-bottom: 40px
+.new-arrivals,
+.featured-products,
+.recommended,
+.categories-example,
+.partners-list
+	margin-bottom: 39px
 	.grid-item
 		margin-bottom: 0
 		border-left: none
@@ -28,6 +32,9 @@
 
 .shop-grid__header
 	position: relative
+
+
+/* ----- BEGIN NEW ARRIVALS ----- */
 
 /* навигация по категориям товара в разделе new arrivals */
 
@@ -51,7 +58,7 @@
 
 
 
-/* ----- SHOP GRID BANNER ----- */
+/* ----- SHOP GRID BANNERS half-size----- */
 
 /* баннеры идущие после секции new arrivals */
 
@@ -60,12 +67,13 @@
 	justify-content: space-between
 	margin: 0 -2px 48px -2px
 
-/* ----- END SHOP GRID BANNER ----- */
+/* ----- END SHOP GRID BANNERS half-size ----- */
 
 
-/* ----- END BEST SELLERS ----- */
+/* ----- BEGIN BEST SELLERS ----- */
 
 .best-sellers
+	margin-bottom: 45px
 	.grid-item__row--outer
 		border: 1px solid $white-three
 		border-bottom: none
@@ -84,6 +92,8 @@
 	position: relative
 	width: 50%
 
+/* стили кароточки товара в разделе best sellers */
+
 .best-sellers
 	.product-image
 		margin-bottom: 0
@@ -96,6 +106,8 @@
 		flex-direction: column
 		margin-top: 15px
 
+/* кнопка-действие для карточки товара раздела best sellers */
+	
 .grid-item__btn
 	background-color: $white-six
 	border: 1px solid $white-three
@@ -113,3 +125,108 @@
 		text-transform: uppercase
 
 /* ----- END BEST SELLERS ----- */
+
+/* ----- BEGIN MAIN-GRID__BANNER ------ */
+
+.main-grid__banner
+	margin-bottom: 48px
+
+/* ----- END MAIN-GRID__BANNER ------ */
+
+
+/*-- BEGIN PRODUCT CATEGORIES --*/
+
+/* список категорий товаров */
+
+.categories-list
+	margin-bottom: 26px
+	li.active
+		a
+			background-color: $white-six
+			&:before
+				border-top: 3px solid $dark-sky-blue
+				content: ""
+				display: block
+				left: -1px
+				position: absolute
+				top: -1px
+				width: 102%
+
+.categories-item
+	align-items: center
+	border: 1px solid $white-two
+	border-left: none
+	color: $warm-grey-six
+	display: flex
+	flex-direction: column
+	height: 105px
+	justify-content: center
+	position: relative
+	i
+		font-size: 2.857em
+		margin-bottom: 20px
+		
+.categories-name
+	color: $black-six
+	font:
+		size: .857em
+		weight: 500
+	text-transform: uppercase
+
+
+/* карточки товара раздела Категории продукции */
+
+.categories-example__list
+	display: flex
+	.grid-item
+		&:first-child
+			border-left: 1px solid $white-three
+	.product-image
+		min-height: auto
+	.product-rating
+		margin-bottom: 22px
+
+.categories-banner
+	flex: 2 0 auto
+	padding: 16px
+
+/*-- END PRODUCT CATEGORIES --*/
+
+/* -- BEGIN BRAND PARTNERS */
+
+.partners-list
+	.grid-item
+		display: flex
+		height: 119px
+		align-items: center
+
+/* -- END BRAND PARTNERS */
+
+/* BEGIN PAYMENT SERVICE */
+
+.sprite
+  background-image: url(../img/footer_icon/footer_icon_sprite.png)
+  background-repeat: no-repeat
+  display: block
+
+.sprite-icon1
+  width: 48px
+  height: 47px
+  background-position: -15px -15px
+
+.sprite-icon2
+  width: 38px
+  height: 51px
+  background-position: -93px -15px
+
+.sprite-icon3
+  width: 54px
+  height: 39px
+  background-position: -161px -15px
+
+.sprite-icon4
+  width: 37px
+  height: 52px
+  background-position: -245px -15px
+
+/* END PAYMENT SERVICE */
