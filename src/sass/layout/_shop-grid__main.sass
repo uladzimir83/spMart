@@ -204,29 +204,114 @@ main
 
 /* BEGIN PAYMENT SERVICE */
 
-.sprite
-  background-image: url(../img/footer_icon/footer_icon_sprite.png)
-  background-repeat: no-repeat
-  display: block
+.our-advantages
+	background-color: $white-seven
+	border-top: 1px solid $white-eight
 
-.sprite-icon1
-  width: 48px
-  height: 47px
-  background-position: -15px -15px
+.advantages__grid
+	display: flex
+	width: 100%
+	.advantages-grid__item
+		border: none
+		border-right: 1px solid $white-eight
+		flex: 1 0 25%
+		padding: 110px 0 45px
+		position: relative
+		text-align: center
+		&:last-child
+			border-right: none
+	h4
+		color: $black-six
+		font:
+			family: raleway
+			size: .929em
+			weight: 600
+		margin-bottom: 1em
+		text-transform: uppercase
 
-.sprite-icon2
-  width: 38px
-  height: 51px
-  background-position: -93px -15px
+.advantages-img
+	left: 50%
+	margin-bottom: 20px
+	position: absolute
+	top: 40px
+	transform: translateX(-50%)
 
-.sprite-icon3
-  width: 54px
-  height: 39px
-  background-position: -161px -15px
-
-.sprite-icon4
-  width: 37px
-  height: 52px
-  background-position: -245px -15px
+.advantages-text
+	color: $warm-grey-five
+	font-size: .929em
+	letter-spacing: .3px
+	line-height: 1.38
+	padding: 0 4em
 
 /* END PAYMENT SERVICE */
+
+
+
+/* BEGIN CONTACT US */
+
+.contact-us
+	background-color: $dark-sky-blue
+	height: 100px
+	padding: 27px 0
+
+.contact-us__inner
+	align-items: center
+	display: flex
+	justify-content: space-between
+
+/* иконка самолета с текстом */
+
+.newsletter-header
+	color: $white
+	display: flex
+	width: 13%
+	span
+		font:
+			family: raleway
+			size: 1.071em
+			weight: 600
+		letter-spacing: .4px
+		text-transform: uppercase
+
+.icon-send-o
+	color: inherit
+	font-size: 2.143em
+	margin-right: 20px
+
+.social-contact
+	align-items: center
+	border-left: 1px solid rgba(255, 255, 255, .15)
+	display: flex
+	padding: 0 10px
+
+.social-header
+	color: $white
+	font:
+		family: raleway
+		size: 1.071em
+		weight: 600
+	letter-spacing: 0.4px
+	margin: 0 19px 0 25px
+	text-transform: uppercase
+
+.social-contact__list
+	display: flex
+	li
+		background-color: $white
+		border-radius: 50%
+		height: 40px
+		margin-left: 5px
+		overflow: hidden
+		width: 40px
+	a
+		align-items: center
+		display: flex
+		height: 100%
+		justify-content: center
+		text-align: center
+		width: 100%
+	i
+		color: $greyish-brown
+		font-size: 1.071em
+
+/* END CONTACT US */
