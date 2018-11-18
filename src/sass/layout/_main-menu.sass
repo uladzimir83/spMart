@@ -5,16 +5,18 @@
 
 .header-bottom-nav
 	nav
-		background-color: $black-five
 		position: relative
 		width: 100%
 
 .main-menu
+	background-color: $black-five
 	display: flex
 
 .main-menu__item
 	padding: 0 1.25%
 	position: relative
+	&:hover
+		background-color: #4d4d4d
 
 .main-menu__link
 	color: $white-four
@@ -27,8 +29,7 @@
 	line-height: 3.74rem
 	text-transform: uppercase
 	width: 100%
-	&:hover
-		color: $warm-grey
+
 
 .contact-phone
 	position: absolute
@@ -61,6 +62,17 @@
 	padding: 22px 20px
 	position: relative
 	text-transform: uppercase
+	z-index: 10001
+
+
+.bck
+	background-color: rgba(0, 0, 0, .3)
+	display: none
+	position: absolute
+	z-index: 10000
+	height: 200%
+	width: 100%
+
 
 .icon-bars
 	&:before
@@ -71,7 +83,7 @@
 .catalog-wrap
 	position: absolute
 	width: 100%
-	z-index: 5
+	z-index: 10001
 
 .catalog-item
 	align-items: center

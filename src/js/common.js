@@ -217,7 +217,15 @@ $('.partners-list').slick({
     var selectTab = $(this).find('a').attr("href");
 
     $(selectTab).fadeIn();
-  });
+	});
+
+
+	$(".catalog").hover(function() {
+		$('.bck').stop(false, true).fadeIn();
+	},
+	function() {
+		$('.bck').stop(false, true).fadeOut();
+	});
 
 });
 
