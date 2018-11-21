@@ -34,20 +34,19 @@
 .contact-phone
 	position: absolute
 	right: 15px
-	top: 35%
+	top: 14%
 	span
-		color: $pinkish-grey
-		font-size: .857em
-		text-transform: uppercase
+		display: none
 
 .main-menu__phone
-	background-color: $sunflower-yellow
-	color: $black-five
-	font:
-		size: .857em
-		weight: 500
-	margin-left: 5px
-	padding: 1px 8px
+	display: inline-block
+	height: 42px
+	width: 24px
+	.contact-phone__num
+		display: none
+	.icon-mobile
+		color: $sunflower-yellow
+		font-size: 45px
 
 .catalog
 	margin-right: 20px
@@ -75,15 +74,20 @@
 
 
 .icon-bars
+	cursor: pointer
 	&:before
 		font-size: 15px
 		position: absolute
 		right: 20px
 
 .catalog-wrap
+	display: none
 	position: absolute
 	width: 100%
 	z-index: 10001
+
+.js-toggle__categories
+	display: block
 
 .catalog-item
 	align-items: center

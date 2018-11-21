@@ -38,10 +38,14 @@ main
 
 /* навигация по категориям товара в разделе new arrivals */
 
+.new-arrivals
+	h2
+		margin: 5px 0 55px
+
 .new-arrivals__nav
+	left: 0
 	position: absolute
-	right: 75px
-	top: 8px
+	top: 37px
 	li
 		display: inline-block
 	a
@@ -66,6 +70,10 @@ main
 	display: flex
 	justify-content: space-between
 	margin: 0 -2px 48px -2px
+.half-size
+	align-items: center
+	flex-direction: column
+	width: 100%
 
 /* ----- END SHOP GRID BANNERS half-size ----- */
 
@@ -90,7 +98,7 @@ main
 	justify-content: space-around
 	padding: 23px 20px 23px 0
 	position: relative
-	width: 50%
+	width: 100%
 
 /* стили кароточки товара в разделе best sellers */
 
@@ -139,6 +147,8 @@ main
 /* список категорий товаров */
 
 .categories-list
+	border-right: 1px solid $white-two
+	border-left: 1px solid $white-two
 	margin-bottom: 26px
 	li.active
 		a

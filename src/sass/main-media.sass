@@ -2,12 +2,75 @@
 	header
 
 @media only screen and (min-width: 768px)
-	header
+	.header-search
+		display: block
+		width: 62%
+
+	.form-toggle.form-submit
+		display: none
 
 @media only screen and (min-width: 992px)
-	header
+	.header-search
+		margin-left: 11%
+		width: 52.2%
+
+	.header-cart__count
+		display: inline-block
+
+	.categories-form__block
+		display: block
+
+	.main-menu__phone
+		display: inline
+		.contact-phone__num
+			background-color: $sunflower-yellow
+			display: inline-block
+			color: $black-five
+			font:
+				size: .857em
+				weight: 500
+			margin-left: 5px
+			padding: 5px 8px
+		.icon-mobile
+			display: none
+
+	.contact-phone
+		top: 30%
+		span
+			display: inline-block
+			color: $pinkish-grey
+			font-size: .857em
+			text-transform: uppercase
+
+	.catalog-wrap
+		display: block
+
+	.main-slider .slick-slider
+		margin: 20px 0 0 25.5%
+
+	.new-arrivals
+		h2
+			margin: 5px 0 27px
+
+	.new-arrivals__nav
+		left: auto
+		right: 75px
+		top: 8px
+
+	.shop-grid__banner.half-size
+		flex-direction: row
+		a
+			margin-left: 20px
+			&:first-child
+				margin-left: 0
+
+	.grid-item__row
+		width: 50%
 
 
 @media only screen and (min-width: 1200px)
 	.container
+		padding: 0
+
+	.header-bar
 		padding: 0
