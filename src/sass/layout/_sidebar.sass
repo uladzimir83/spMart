@@ -3,8 +3,7 @@
 
 
 .shop-grid__sidebar
-	margin-right: 35px
-	width: 265px
+	text-align: center
 
 /* карточка товара вертикальная удлиненная */	
 
@@ -17,7 +16,6 @@
 
 .item-header
 	height: 50px
-	margin: -1px 0 15px
 	h3
 		font:
 			famly: raleway
@@ -44,21 +42,14 @@
 	h3
 		color: $white
 
-/* обертка изображения слайдера .hot-deals */
+.sidebar__hot-deals
+	display: none
 
-.hot-deals__img
-	margin-bottom: 12px
-	text-align: center
-	img
-		height: 228px
-
-/* описание товара на карточке товара .hot-deals */
-
-.hot-deals
-	.product-info
-		text-align: center
 
 /* блок с новыми товарами. .sidebar-products__new */
+
+.grid-item.sidebar-products__new
+	border-bottom: none
 
 .sidebar-products__new
 	.item-header__grey
@@ -66,39 +57,12 @@
 
 /* пункты списка новых товаров */
 
-/* счетчик до завершения акции */
-
-#countdown
-	border-top: 1px solid $white-three
-	display: flex
-	width: 100%
-
-.countdown-items
-	background-color: $white-five
-	border-right: 1px solid $white-three
-	flex: 1
-	font-size: 13px
-	padding: 13px 17px
-	text-align: center
-	&:last-child
-		border: none
-	span
-		color: $black-seven
-		display: inline-block
-		margin-bottom: 9px
-
-.count-text
-	color: $warm-grey-four
-
-
 
 .sidebar-products__items
 	border-bottom: 1px solid $white-three
 	display: flex
 	align-items: flex-end
 	padding: 8px 0
-	&:last-child
-		border-bottom: none
 	.product-image
 		margin-bottom: 0
 	.product-info
@@ -109,107 +73,18 @@
 
 
 .sidebar-banner
-	img
-		display: block
+	display: none
 
 /* блок с отзывами */
 
 .sidebar-testim
-	padding-bottom: 68px
-	hr
-		border: 0
-		border-top: 1px solid $white-three
-		margin: 0 auto
-		width: 85%
-
-/* пункты слайдера отзывов */
-
-.testim-slider__item
-	padding: 0 1.786em 30px 1.786em
-	text-align: center
-	p
-		color: $warm-grey-four
-		font:
-			family: raleway
-		line-height: 1.571em
-		margin-bottom: 1.714em
-	img
-		display: inline-block
-		border-radius: 50%
-		margin-bottom: 13px
-
-.testim-author__name
-	color: $black-six
-	font:
-		family: raleway
-		size: .929em
-		weight: 600
-	letter-spacing: .7px
-	margin-bottom: .615em
-	text-transform: uppercase
-
-.testim-author__post
-	color: $warm-grey-five
-	font-weight: 300
+	display: none
 
 /* блок с новостями */
 
-.sidebar-news__item
-	padding: 0 1.429em
-	p
-		color: $warm-grey-six
-		line-height: 20px
-		margin-bottom: 1.857em
+.sidebar-news
+	display: none
 
-.sidebar-news__img
-	max-height: 140px
-	margin-bottom: 22px
-	overflow: hidden
-	position: relative
-
-.news-date__badge
-	background-color: $dark-sky-blue
-	border-radius: 2px
-	color: $white
-	font:
-		size: 1.286em
-		weight: 700
-	left: 10px
-	padding: 8px 10px
-	position: absolute
-	top: 10px
-	text-transform: uppercase
-	span
-		display: block
-		font-size: .611em
-
-.sidebar-news__title
-	color: $black-six
-	font:
-		family: raleway
-		size: 1.143em
-		weight: 500
-	margin-bottom: .688em
-
-.sidebar-news__info
-	color: $greyish-brown-two
-	font:
-		size: .929em
-		weight: 300
-	margin-bottom: 1.385em
-
-.link-menu--section
-	color: $greyish-brown-two
-	margin-right: 8px
-
-.comments-count
-	margin-left: 8px
-
-.news-link__full
-	margin-bottom: 2.357em
-	a
-		color: $dark-sky-blue
-		text-transform: uppercase
 
 
 

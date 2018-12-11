@@ -4,9 +4,6 @@ main
 	h2
 		margin: 5px 0 27px
 
-/* размер основного раздела */
-.shop-grid__main
-	width: calc(100% - 300px)
 
 /* стили для обертки карточки товара */
 
@@ -17,7 +14,7 @@ main
 .partners-list
 	margin-bottom: 39px
 	.grid-item
-		margin-bottom: 0
+		margin: 0 -1px
 		border-left: none
 		position: relative
 		text-align: center
@@ -27,6 +24,7 @@ main
 			display: block
 	.product-image
 		min-height: 225px
+
 
 /* шапка раздела */
 
@@ -38,25 +36,8 @@ main
 
 /* навигация по категориям товара в разделе new arrivals */
 
-.new-arrivals
-	h2
-		margin: 5px 0 55px
-
 .new-arrivals__nav
-	left: 0
-	position: absolute
-	top: 37px
-	li
-		display: inline-block
-	a
-		color: $warm-grey-four
-		font:
-			size: .857em
-			weight: 500
-		margin-left: 25%
-		text-transform: uppercase
-		&:hover
-			color: $dark-sky-blue
+	display: none
 
 /* ----- END NEW ARRIVALS ----- */
 
@@ -95,7 +76,6 @@ main
 	border-bottom: 1px solid $white-three
 	border-radius: 2px
 	display: flex
-	justify-content: space-around
 	padding: 23px 20px 23px 0
 	position: relative
 	width: 100%
@@ -104,7 +84,7 @@ main
 
 .best-sellers
 	.product-image
-		margin-bottom: 0
+		margin: 0 7.5% 0 0
 		max-width: 175px
 	.product-rating
 		margin: -20px 0
@@ -187,18 +167,18 @@ main
 /* карточки товара раздела Категории продукции */
 
 .categories-example__list
+	border-left: 1px solid $white-three
 	display: flex
+	flex-wrap: wrap
 	.grid-item
-		&:first-child
-			border-left: 1px solid $white-three
+		width: 100%
 	.product-image
 		min-height: auto
 	.product-rating
-		margin-bottom: 22px
+		margin-bottom: 66px
 
 .categories-banner
-	flex: 2 0 auto
-	padding: 16px
+	display: none
 
 /*-- END PRODUCT CATEGORIES --*/
 
@@ -206,9 +186,11 @@ main
 
 .partners-list
 	.grid-item
+		align-items: center
 		display: flex
 		height: 119px
-		align-items: center
+		justify-content: center
+		padding: 0 2px
 
 /* -- END BRAND PARTNERS */
 
@@ -220,11 +202,10 @@ main
 
 .advantages__grid
 	display: flex
+	flex-wrap: wrap
 	width: 100%
 	.advantages-grid__item
-		border: none
-		border-right: 1px solid $white-eight
-		flex: 1 0 25%
+		flex: 1 0 50%
 		padding: 110px 0 45px
 		position: relative
 		text-align: center
@@ -254,25 +235,26 @@ main
 
 .contact-us
 	background-color: $dark-sky-blue
-	height: 100px
 	padding: 27px 0
 
 .contact-us__inner
 	align-items: center
 	display: flex
 	justify-content: space-between
+	flex-direction: column
 
 /* иконка самолета с текстом */
 
 .newsletter-header
 	color: $white
 	display: flex
-	width: 13%
+	margin-bottom: 20px
 	span
 		font:
 			family: raleway
 			size: 1.071em
 			weight: 600
+		line-height: 26px
 		letter-spacing: .4px
 		text-transform: uppercase
 
@@ -281,21 +263,8 @@ main
 	font-size: 2.143em
 	margin-right: 20px
 
-.social-contact
-	align-items: center
-	border-left: 1px solid rgba(255, 255, 255, .15)
-	display: flex
-	padding: 0 10px
-
 .social-header
-	color: $white
-	font:
-		family: raleway
-		size: 1.071em
-		weight: 600
-	letter-spacing: 0.4px
-	margin: 0 19px 0 25px
-	text-transform: uppercase
+	display: none
 
 .social-contact__list
 	display: flex
@@ -303,9 +272,11 @@ main
 		background-color: $white
 		border-radius: 50%
 		height: 40px
-		margin-left: 5px
+		margin-left: 25px
 		overflow: hidden
 		width: 40px
+		&:first-child
+			margin-left: 0
 	a
 		align-items: center
 		display: flex

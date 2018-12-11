@@ -4,13 +4,8 @@
 /* стили главного слайдера */
 
 .main-slider
-	margin-bottom: 2.214em
 	.slick-slider
-		height: 470px
 		margin-top: 20px
-		img
-			height: 470px
-			width: 100%
 
 .slick-slider__item
 	position: relative
@@ -90,9 +85,19 @@
 	.slick-next
 		transform: rotate(180deg)
 
+.hot-deals__slider
+	.slick-prev
+		top: -40px
+
+.hot-deals__slider
+	.slick-next
+		top: -40px
+
 /* слайдер в разделе testimonials середина сайдбара */
 
 .sidebar-testim__slider
+	margin-top: 15px
+	margin-bottom: 68px
 	.slick-dots
 		bottom: -45px
 		transform: translateX(-50%)
@@ -101,6 +106,9 @@
 	.slick-active
 		button
 			background-color: $dark-sky-blue
+
+.sidebar-news__slider
+	margin-top: 15px
 
 /* стрелки слайдеров. общие стили для раздела shop grid main */
 
@@ -117,11 +125,11 @@
 		outline: none
 		padding: 0
 		position: absolute
-		right: 0
+		right: 10px
 		top: -42px
 		width: 24px
 	.slick-prev
-		right: 30px
+		right: 40px
 	.slick-next
 		transform: rotate(180deg)
 
@@ -129,12 +137,14 @@
 
 .product-carousel
 	.slick-list
-		margin: 0 -3px
-		padding: 0 1px
-	.slick-track
-		padding: 5px 0
+		border-right: 1px solid $white-three
+		margin-right: 1px
 	
 .partners-list
 	.slick-list
+		border-right: 1px solid $white-three
 		margin: 0 1px 0 -2px
 		padding: 0 1px
+
+.slick-initialized .slick-slide.grid-item__outer
+	display: flex

@@ -152,13 +152,25 @@ $('.product-carousel').slick({
 	slidesToScroll: 1,
 	speed: 1000,
 	responsive: [
+		{
+      breakpoint: 1200,
+      settings: {
+				slidesToShow: 3
+      }
+		},
     {
       breakpoint: 992,
       settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1
+				slidesToShow: 2
+      }
+		},
+		{
+      breakpoint: 576,
+      settings: {
+				slidesToShow: 1
       }
 		}
+
 	]
 });
 
@@ -183,6 +195,12 @@ $('.categories-list').slick({
         slidesToShow: 5,
         slidesToScroll: 1
       }
+		},
+		{
+      breakpoint: 576,
+      settings: {
+				slidesToShow: 3
+      }
 		}
 	]
 });
@@ -193,7 +211,21 @@ $('.partners-list').slick({
 	arrows: true,
 	slidesToShow: 6,
 	slidesToScroll: 1,
-	speed: 1000
+	speed: 1000,
+	responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 4
+      }
+		},
+		{
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 2
+      }
+		}
+	]
 });
 
 
@@ -224,6 +256,7 @@ $('.partners-list').slick({
 	});
 
 
+//раздел categories переключение табов
 
 	$('.categories-example__list').hide();
   $('.categories-example__list:first').show();
@@ -238,7 +271,7 @@ $('.partners-list').slick({
     $(selectTab).fadeIn();
 	});
 
-
+//затемнение поп-апом при наведении на каталог
 	if($(window).width() > 992) {
 		$(".catalog").hover(function() {
 			$('.bck').stop(false, true).fadeIn();
@@ -248,16 +281,74 @@ $('.partners-list').slick({
 		});
 	}
 
-
-	
-
+//триггер каталога в адаптивном меню
 	if($(window).width() < 992) {
-		$('.icon-bars').click(function() {
+		$('.catalog-header').click(function() {
 			$('.catalog-wrap').toggleClass('js-toggle__categories');
 		});
 	};
 
+	//бургер-кнопка переключения меню
+	$('.hamburger').click(function() {
+		$('.hamburger').toggleClass('is-active');
+		$('.main-menu').toggleClass('js-main-menu');
+	});
+
+	//адаптив для колонок футера
+
+	var footerHeader = $('.footer-nav__column h3');
+
+	if($(window).width() < 768) {
+
+		footerHeader.next().hide();
+
+		footerHeader.click(function() {
+			if($(this).removeClass('active').next().is(':visible')) {
+				$(this).next().slideUp();
+				return;
+			}
+			footerHeader.removeClass('active').next().slideUp();
+			$(this).toggleClass('active').next().slideDown();
+		});
+
+	};
+
+	$(window).resize(function() {
+		if($(this).width() >= 768) {
+			footerHeader.next().show();
+		} else {
+			footerHeader.next().hide();
+		}
+	});
+
+//триггер формы поиска по сайту
+$('.form-toggle.form-submit').click(function(e) {
+	$(this).fadeToggle().next().toggleClass('js-search-visible');
+});
+
+$(document).keyup(function(e) {
+	if (e.keyCode === 27) { 
+			$('.form-toggle.form-submit').fadeIn().next().removeClass('js-search-visible');
+	}
+});
+
+$(document).mouseup(function (e){ // событие клика по веб-документу
+	if($(".header-search").hasClass('js-search-visible')) {
+		var div = $(".header-search"); // тут указываем ID элемента
+	if (!div.is(e.target) // если клик был не по нашему блоку
+			&& div.has(e.target).length === 0) { // и не по его дочерним элементам
+				$('.form-toggle.form-submit').fadeIn().next().removeClass('js-search-visible');
+		
+	}
+	}
 	
+});
+
+//триггер входа на сайт или регистрации
+
+$('.header-top__entry-switcher').click(function() {
+
+})
 
 });
 

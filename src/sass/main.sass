@@ -17,6 +17,7 @@
 
 @import "../libs/slick/slick.scss"
 @import "../libs/jquery.rateit/scripts/rateit.css"
+@import "../libs/hamburgers/hamburgers.scss"
 
 @import "layout/_header.sass"
 @import "layout/_main-menu.sass"
@@ -50,12 +51,7 @@ img
 /* top-offers - line under slider */
 
 .top-offers
-	display: flex
-
-.top-offers-items
-	margin-right: 22px
-	&:last-child
-		margin-right: 0
+	display: none
 
 /* styles for product card */
 .product-name
@@ -73,13 +69,14 @@ img
 .product-rating
 	height: 9px
 	position: relative
-	margin: -20px auto 30px
+	margin: -20px auto 65px
 	width: 55px
 
 .product-image
 	align-items: center
 	display: flex
-	margin-bottom: 26px
+	justify-content: center
+	margin-bottom: 17px
 	padding: 12px 18px 0
 
 /* styles star rating */

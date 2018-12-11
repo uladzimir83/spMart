@@ -13,8 +13,11 @@
 	cursor: pointer
 	display: flex
 	justify-content: center
+	height: 35px
 	position: absolute
-	right: 75px
+	right: 136px
+	top: 10px
+	width: 35px
 
 
 /* обертка формы */
@@ -91,6 +94,7 @@ select::-ms-expand
     display: none
 
 .categories-form
+	background-color: $white
 	border: none
 	color: $dark-grey-two
 	cursor: pointer
@@ -106,8 +110,10 @@ select::-ms-expand
 /* begin newaletter form */
 
 .newsletter-form
+	height: 45px
+	margin-bottom: 20px
 	position: relative
-	width: 43.95%
+	width: 100%
 
 .newsletter-input
 	font-size: 
@@ -119,3 +125,9 @@ select::-ms-expand
 	width: 20%
 
 /* end newaletter form */
+
+.js-search-visible
+	display: block
+	position: absolute
+	right: 0
+	z-index: 1006

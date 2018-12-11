@@ -64,10 +64,17 @@
 
 								</div>	<!-- end .header-top-currency -->
 
+								<div class="language-block language-block__mobile">
+									<span class="language__switcher"><i class="flag flag-britain">English</i></span>
+									<ul class="language-list">
+										<li><i class="flag flag-russia">Russian</i></li>
+									</ul>
+								</div>
+
 							</div>	<!-- end .header-top-regestration -->
 
 
-							<div class="header-top__info">
+							<div class="user-assistance">
 								<span class="help-link"><a href="#">Help</a></span>
 								<span class="wishlist-link"><i class="icon icon-heart-o"></i><a href="#">Wishlist</a></span>
 								<div class="language-block">
@@ -92,7 +99,7 @@
 
 							<div class="header-bar">
 
-								<div class="header-logo"><a href="/"  class="logo__link"><img src="img/logo_header.png" alt="superMart logo"><span>supermart</span></a></div>
+								<div class="header-logo"><a href="/"  class="logo__link"><img src="img/logo_header.svg" alt="superMart logo"><span>supermart</span></a></div>
 
 								<span class="form-submit form-toggle"><i class="icon icon-search"></i></span>
 								<div class="header-search">
@@ -143,6 +150,14 @@
 										
 								</div>	<!-- end .header-cart -->
 
+								<!-- burger button for toggle menu in mobile version -->
+
+								<button class="hamburger hamburger--vortex" type="button">
+									<span class="hamburger-box">
+										<span class="hamburger-inner"></span>
+									</span>
+								</button>
+
 							</div>
 
 						</div>
@@ -156,6 +171,20 @@
 
 								<nav>
 									<ul class="main-menu">
+										<li class="main-menu__item main-menu__toggle">
+											<button class="hamburger hamburger--vortex" type="button">
+												<span class="hamburger-box">
+													<span class="hamburger-inner"></span>
+												</span>
+											</button>
+										</li>
+										<li class="main-menu__item main-menu__help">
+											<div class="user-assistance">
+												<span class="help-link"><a href="#">Help</a></span>
+												<span class="wishlist-link"><i class="icon icon-heart-o"></i><a href="#">Wishlist</a></span>
+												<span class="app-link"><a href="https://play.google.com/store/apps" class="btn btn-app">download app</a></span>
+											</div>
+										</li>
 										<li class="catalog">
 											<div class="catalog-header">
 												Departments
@@ -259,293 +288,6 @@
 				<div class="container">
 
 					<div class="shop-grid">
-
-						<!-- sidebar begin -->
-
-						<aside class="shop-grid__sidebar">
-
-							<div class="grid-item sidebar__hot-deals">
-
-								<header class="item-header item-header__grey">
-									<h3>hot deals</h3>
-								</header>
-
-								<div class="hot-deals__slider">
-
-									<div class="hot-deals">
-
-										<div class="hot-deals__img"><a href="#"><img src="img/hot_deals/watch_offer.jpg" alt="watch"></a></div>
-											
-											<div class="product-info">
-												<a href="#" class="product-name">Zexon Brand Men’s watch</a>
-												<div class="product-price">
-													<i class="icon icon-dollar"></i>124.00
-												</div>
-												<div class="product-rating">
-													<div class="rating"></div>
-												<div class="rating-fill rating-fill4"></div>
-											</div>
-
-										</div>
-			
-									</div>
-
-									<div class="hot-deals">
-
-											<div class="hot-deals__img"><a href="#"><img src="img/hot_deals/watch_offer_1.jpg" alt="watch"></a></div>
-												
-												<div class="product-info">
-													<a href="#" class="product-name">Zexon Brand Men’s watch</a>
-													<div class="product-price">
-														<i class="icon icon-dollar"></i>124.00
-													</div>
-													<div class="product-rating">
-														<div class="rating"></div>
-													<div class="rating-fill rating-fill4"></div>
-												</div>
-	
-											</div>
-				
-										</div>
-
-										<div class="hot-deals">
-
-												<div class="hot-deals__img"><a href="#"><img src="img/hot_deals/watch_offer_2.jpg" alt="watch"></a></div>
-													
-													<div class="product-info">
-														<a href="#" class="product-name">Zexon Brand Men’s watch</a>
-														<div class="product-price">
-															<i class="icon icon-dollar"></i>124.00
-														</div>
-														<div class="product-rating">
-															<div class="rating"></div>
-														<div class="rating-fill rating-fill4"></div>
-													</div>
-		
-												</div>
-					
-											</div>
-
-								</div>
-
-								
-
-								<div class="hot-deals-countdown">
-									<div id="countdown">
-										<div class="countdown-items">
-											<span class="days"></span>
-											<div class="count-text">Days</div>
-										</div>
-										<div class="countdown-items">
-											<span class="hours"></span>
-											<div class="count-text">Hrs</div>
-										</div>
-										<div class="countdown-items">
-											<span class="minutes"></span>
-											<div class="count-text">Mins</div>
-										</div>
-										<div class="countdown-items">
-											<span class="seconds"></span>
-											<div class="count-text">Sec</div>
-										</div>
-									</div>
-								</div>
-
-							</div>
-
-							<!-- end sidebar slider hot-deals -->
-
-							<!-- sidebar new products -->
-
-							<div class="grid-item sidebar-products__new">
-
-								<header class="item-header item-header__grey">
-									<h3>new products</h3>
-								</header>
-
-								<div class="sidebar-products__list">
-
-									<div class="sidebar-products__items">
-										<div class="product-image">
-											<a href="#"><img src="img/grid_img/for_home/fh6_1_min.jpg" alt="heater"></a>
-										</div>
-										<div class="product-info">
-											<a href="" class="product-name">Yunique Plus Hair Styler</a>
-											<div class="product-price"><i class="icon icon-dollar"></i>56.00</div>
-											<div class="product-rating">
-												<div class="rating"></div>
-												<div class="rating-fill"></div>
-											</div>
-										</div>
-									</div>
-
-									<div class="sidebar-products__items">
-										<div class="product-image">
-											<a href="#"><img src="img/grid_img/electronic/e5_1_min.jpg" alt="audio cable"></a>
-										</div>
-										<div class="product-info">
-											<a href="" class="product-name">Cybershot Digital cable</a>
-											<div class="product-price"><i class="icon icon-dollar"></i>49.00</div>
-											<div class="product-rating">
-												<div class="rating"></div>
-												<div class="rating-fill rating-fill3"></div>
-											</div>
-										</div>
-									</div>
-
-									<div class="sidebar-products__items">
-										<div class="product-image">
-											<a href="#"><img src="img/grid_img/fashion/f3_4_min.jpg" alt="Eau de Toilette"></a>
-										</div>
-										<div class="product-info">
-											<a href="" class="product-name">Skinn Celeste Woman</a>
-											<div class="product-price"><i class="icon icon-dollar"></i>75.00</div>
-											<div class="product-rating">
-												<div class="rating"></div>
-												<div class="rating-fill rating-fill4"></div>
-											</div>
-										</div>
-									</div>
-
-									<div class="sidebar-products__items">
-										<div class="product-image">
-											<a href="#"><img src="img/grid_img/phone/ph1_3_min.jpg" alt="iphone"></a>
-										</div>
-										<div class="product-info">
-											<a href="" class="product-name">Apple iphone 5s - 16GB</a>
-											<div class="product-price"><i class="icon icon-dollar"></i>175.00</div>
-											<div class="product-rating">
-												<div class="rating"></div>
-												<div class="rating-fill"></div>
-											</div>
-										</div>
-									</div>
-
-									<div class="sidebar-products__items">
-										<div class="product-image">
-											<a href="#"><img src="img/grid_img/fashion/f5_1_min.jpg" alt="sneaskers"></a>
-										</div>
-										<div class="product-info">
-											<a href="" class="product-name">Black Casual Sneeker</a>
-											<div class="product-price"><i class="icon icon-dollar"></i>105.00</div>
-											<div class="product-rating">
-												<div class="rating"></div>
-												<div class="rating-fill rating-fill4"></div>
-											</div>
-										</div>
-									</div>
-
-									<div class="sidebar-products__items">
-										<div class="product-image">
-											<a href="#"><img src="img/grid_img/phone/ph3_3_min.jpg" alt="huawei"></a>
-										</div>
-										<div class="product-info">
-											<a href="" class="product-name">Huwai honour U19</a>
-											<div class="product-price"><i class="icon icon-dollar"></i>259.00</div>
-											<div class="product-rating">
-												<div class="rating"></div>
-												<div class="rating-fill rating-fill4"></div>
-											</div>
-										</div>
-									</div>
-
-								</div>
-
-							</div>
-
-							<!-- end sidebar new products -->
-
-							<!-- sidebar banner -->
-
-							<div class="grid-item sidebar-banner">
-								<a href="#"><img src="img/best_offers/offer_8.jpg" alt="fashion woman banner"></a>
-							</div>
-
-							<!-- end sidebar banner -->
-
-							<!-- sidebar testimonials -->
-
-							<div class="grid-item sidebar-testim">
-
-								<header class="item-header item-header__blue">
-									<h3>testimonials</h3>
-								</header>
-
-								<div class="sidebar-testim__slider">
-									<div class="testim-slider__item">
-										<p>Black gold Makin' your way in the world today takes every thing you've got. Takin' a break from all your worries the some marry shop theme.</p>
-										<div class="testim-author__info">
-											<img src="img/testim_photo.jpg" alt="author testimonial photo">
-											<div class="testim-author__name">Caitlin Probst</div>
-											<div class="testim-author__post">Lead designer</div>
-										</div>
-									</div>
-									<div class="testim-slider__item">
-										<p>Black gold Makin' your way in the world today takes every thing you've got. Takin' a break from all your worries the some marry shop theme.</p>
-										<div class="testim-author__info">
-											<img src="img/testim_photo.jpg" alt="author testimonial photo">
-											<div class="testim-author__name">Caitlin Probst</div>
-											<div class="testim-author__post">Lead designer</div>
-										</div>
-									</div>
-									<div class="testim-slider__item">
-										<p>Black gold Makin' your way in the world today takes every thing you've got. Takin' a break from all your worries the some marry shop theme.</p>
-										<div class="testim-author__info">
-											<img src="img/testim_photo.jpg" alt="author testimonial photo">
-											<div class="testim-author__name">Caitlin Probst</div>
-											<div class="testim-author__post">Lead designer</div>
-										</div>
-									</div>
-								</div>
-
-								<hr>
-
-							</div>
-
-							<!-- end sidebar testimonials -->
-
-							<!-- sidebar news -->
-
-							<div class="grid-item sidebar-news">
-								<header class="item-header item-header__grey">
-									<h3>recent news</h3>
-								</header>
-
-								<div class="sidebar-news__slider">
-
-									<div class="sidebar-news__item">
-										<div class="sidebar-news__img"><img src="img/best_offers/offer_10.jpg" alt="sunglasses"><div class="news-date__badge">24 <span>dec</span></div></div>
-										<div class="sidebar-news__title">New Blog Post Title Here</div>
-										<div class="sidebar-news__info"><a href="" class="link-menu--section">In Fashion</a>&nbsp;|&nbsp;<span class="comments-count">No Comments</span></div>
-										<p>The Love Boat soon will making another the Love Boating...</p>
-										<div class="news-link__full"><a href="">Continue reading </a></div>
-									</div>
-
-									<div class="sidebar-news__item">
-										<div class="sidebar-news__img"><img src="img/best_offers/offer_10.jpg" alt="sunglasses"><div class="news-date__badge">24 <span>dec</span></div></div>
-										<div class="sidebar-news__title">New Blog Post Title Here</div>
-										<div class="sidebar-news__info"><a href="" class="link-menu--section">In Fashion</a>&nbsp;|&nbsp;<span class="comments-count">No Comments</span></div>
-										<p>The Love Boat soon will making another the Love Boating...</p>
-										<div class="news-link__full"><a href="">Continue reading </a></div>
-									</div>
-
-									<div class="sidebar-news__item">
-										<div class="sidebar-news__img"><img src="img/best_offers/offer_10.jpg" alt="sunglasses"><div class="news-date__badge">24 <span>dec</span></div></div>
-										<div class="sidebar-news__title">New Blog Post Title Here</div>
-										<div class="sidebar-news__info"><a href="" class="link-menu--section">In Fashion</a>&nbsp;|&nbsp;<span class="comments-count">No Comments</span></div>
-										<p>The Love Boat soon will making another the Love Boating...</p>
-										<div class="news-link__full"><a href="">Continue reading </a></div>
-									</div>
-
-								</div>	<!-- end .sidebar-news__slider -->
-
-							</div>
-								
-							<!-- end sidebar news -->
-
-						</aside>
-
-						<!-- sidebar end -->
 
 						<!-- shop-grid__main begin -->
 
@@ -1209,7 +951,296 @@
 
 							<!-- recommended for you end -->
 
-						</div>	<!-- shop-grid__main end -->
+						</div>	
+						
+						<!-- shop-grid__main end -->
+
+						<!-- sidebar begin -->
+
+						<aside class="shop-grid__sidebar">
+
+							<div class="grid-item sidebar__hot-deals">
+						
+								<header class="item-header item-header__grey">
+									<h3>hot deals</h3>
+								</header>
+						
+								<div class="hot-deals__slider">
+						
+									<div class="hot-deals">
+						
+										<div class="hot-deals__img"><a href="#"><img src="img/hot_deals/watch_offer.jpg" alt="watch"></a></div>
+											
+											<div class="product-info">
+												<a href="#" class="product-name">Zexon Brand Men’s watch</a>
+												<div class="product-price">
+													<i class="icon icon-dollar"></i>124.00
+												</div>
+												<div class="product-rating">
+													<div class="rating"></div>
+												<div class="rating-fill rating-fill4"></div>
+											</div>
+						
+										</div>
+									
+									</div>
+						
+									<div class="hot-deals">
+						
+											<div class="hot-deals__img"><a href="#"><img src="img/hot_deals/watch_offer_1.jpg" alt="watch"></a></div>
+												
+												<div class="product-info">
+													<a href="#" class="product-name">Zexon Brand Men’s watch</a>
+													<div class="product-price">
+														<i class="icon icon-dollar"></i>124.00
+													</div>
+													<div class="product-rating">
+														<div class="rating"></div>
+													<div class="rating-fill rating-fill4"></div>
+												</div>
+							
+											</div>
+										
+										</div>
+						
+										<div class="hot-deals">
+						
+												<div class="hot-deals__img"><a href="#"><img src="img/hot_deals/watch_offer_2.jpg" alt="watch"></a></div>
+													
+													<div class="product-info">
+														<a href="#" class="product-name">Zexon Brand Men’s watch</a>
+														<div class="product-price">
+															<i class="icon icon-dollar"></i>124.00
+														</div>
+														<div class="product-rating">
+															<div class="rating"></div>
+														<div class="rating-fill rating-fill4"></div>
+													</div>
+								
+												</div>
+					
+											</div>
+						
+								</div>
+						
+								
+						
+								<div class="hot-deals-countdown">
+									<div id="countdown">
+										<div class="countdown-items">
+											<span class="days"></span>
+											<div class="count-text">Days</div>
+										</div>
+										<div class="countdown-items">
+											<span class="hours"></span>
+											<div class="count-text">Hrs</div>
+										</div>
+										<div class="countdown-items">
+											<span class="minutes"></span>
+											<div class="count-text">Mins</div>
+										</div>
+										<div class="countdown-items">
+											<span class="seconds"></span>
+											<div class="count-text">Sec</div>
+										</div>
+									</div>
+								</div>
+						
+							</div>
+						
+							<!-- end sidebar slider hot-deals -->
+						
+							<!-- sidebar new products -->
+						
+							<div class="grid-item sidebar-products__new">
+						
+								<header class="item-header item-header__grey">
+									<h3>new products</h3>
+								</header>
+						
+								<div class="sidebar-products__list">
+						
+									<div class="sidebar-products__items">
+										<div class="product-image">
+											<a href="#"><img src="img/grid_img/for_home/fh6_1_min.jpg" alt="heater"></a>
+										</div>
+										<div class="product-info">
+											<a href="" class="product-name">Yunique Plus Hair Styler</a>
+											<div class="product-price"><i class="icon icon-dollar"></i>56.00</div>
+											<div class="product-rating">
+												<div class="rating"></div>
+												<div class="rating-fill"></div>
+											</div>
+										</div>
+									</div>
+						
+									<div class="sidebar-products__items">
+										<div class="product-image">
+											<a href="#"><img src="img/grid_img/electronic/e5_1_min.jpg" alt="audio cable"></a>
+										</div>
+										<div class="product-info">
+											<a href="" class="product-name">Cybershot Digital cable</a>
+											<div class="product-price"><i class="icon icon-dollar"></i>49.00</div>
+											<div class="product-rating">
+												<div class="rating"></div>
+												<div class="rating-fill rating-fill3"></div>
+											</div>
+										</div>
+									</div>
+						
+									<div class="sidebar-products__items">
+										<div class="product-image">
+											<a href="#"><img src="img/grid_img/fashion/f3_4_min.jpg" alt="Eau de Toilette"></a>
+										</div>
+										<div class="product-info">
+											<a href="" class="product-name">Skinn Celeste Woman</a>
+											<div class="product-price"><i class="icon icon-dollar"></i>75.00</div>
+											<div class="product-rating">
+												<div class="rating"></div>
+												<div class="rating-fill rating-fill4"></div>
+											</div>
+										</div>
+									</div>
+						
+									<div class="sidebar-products__items">
+										<div class="product-image">
+											<a href="#"><img src="img/grid_img/phone/ph1_3_min.jpg" alt="iphone"></a>
+										</div>
+										<div class="product-info">
+											<a href="" class="product-name">Apple iphone 5s - 16GB</a>
+											<div class="product-price"><i class="icon icon-dollar"></i>175.00</div>
+											<div class="product-rating">
+												<div class="rating"></div>
+												<div class="rating-fill"></div>
+											</div>
+										</div>
+									</div>
+						
+									<div class="sidebar-products__items">
+										<div class="product-image">
+											<a href="#"><img src="img/grid_img/fashion/f5_1_min.jpg" alt="sneaskers"></a>
+										</div>
+										<div class="product-info">
+											<a href="" class="product-name">Black Casual Sneeker</a>
+											<div class="product-price"><i class="icon icon-dollar"></i>105.00</div>
+											<div class="product-rating">
+												<div class="rating"></div>
+												<div class="rating-fill rating-fill4"></div>
+											</div>
+										</div>
+									</div>
+						
+									<div class="sidebar-products__items">
+										<div class="product-image">
+											<a href="#"><img src="img/grid_img/phone/ph3_3_min.jpg" alt="huawei"></a>
+										</div>
+										<div class="product-info">
+											<a href="" class="product-name">Huwai honour U19</a>
+											<div class="product-price"><i class="icon icon-dollar"></i>259.00</div>
+											<div class="product-rating">
+												<div class="rating"></div>
+												<div class="rating-fill rating-fill4"></div>
+											</div>
+										</div>
+									</div>
+						
+								</div>
+						
+							</div>
+						
+							<!-- end sidebar new products -->
+						
+							<!-- sidebar banner -->
+						
+							<div class="grid-item sidebar-banner">
+								<a href="#"><img src="img/best_offers/offer_8.jpg" alt="fashion woman banner"></a>
+							</div>
+						
+							<!-- end sidebar banner -->
+						
+							<!-- sidebar testimonials -->
+						
+							<div class="grid-item sidebar-testim">
+						
+								<header class="item-header item-header__blue">
+									<h3>testimonials</h3>
+								</header>
+						
+								<div class="sidebar-testim__slider">
+									<div class="testim-slider__item">
+										<p>Black gold Makin' your way in the world today takes every thing you've got. Takin' a break from all your worries the some marry shop theme.</p>
+										<div class="testim-author__info">
+											<img src="img/testim_photo.jpg" alt="author testimonial photo">
+											<div class="testim-author__name">Caitlin Probst</div>
+											<div class="testim-author__post">Lead designer</div>
+										</div>
+									</div>
+									<div class="testim-slider__item">
+										<p>Black gold Makin' your way in the world today takes every thing you've got. Takin' a break from all your worries the some marry shop theme.</p>
+										<div class="testim-author__info">
+											<img src="img/testim_photo.jpg" alt="author testimonial photo">
+											<div class="testim-author__name">Caitlin Probst</div>
+											<div class="testim-author__post">Lead designer</div>
+										</div>
+									</div>
+									<div class="testim-slider__item">
+										<p>Black gold Makin' your way in the world today takes every thing you've got. Takin' a break from all your worries the some marry shop theme.</p>
+										<div class="testim-author__info">
+											<img src="img/testim_photo.jpg" alt="author testimonial photo">
+											<div class="testim-author__name">Caitlin Probst</div>
+											<div class="testim-author__post">Lead designer</div>
+										</div>
+									</div>
+								</div>
+						
+								<hr>
+						
+							</div>
+						
+							<!-- end sidebar testimonials -->
+						
+							<!-- sidebar news -->
+						
+							<div class="grid-item sidebar-news">
+								<header class="item-header item-header__grey">
+									<h3>recent news</h3>
+								</header>
+						
+								<div class="sidebar-news__slider">
+						
+									<div class="sidebar-news__item">
+										<div class="sidebar-news__img"><img src="img/best_offers/offer_10.jpg" alt="sunglasses"><div class="news-date__badge">24 <span>dec</span></div></div>
+										<div class="sidebar-news__title">New Blog Post Title Here</div>
+										<div class="sidebar-news__info"><a href="" class="link-menu--section">In Fashion</a>&nbsp;|&nbsp;<span class="comments-count">No Comments</span></div>
+										<p>The Love Boat soon will making another the Love Boating...</p>
+										<div class="news-link__full"><a href="">Continue reading </a></div>
+									</div>
+						
+									<div class="sidebar-news__item">
+										<div class="sidebar-news__img"><img src="img/best_offers/offer_10.jpg" alt="sunglasses"><div class="news-date__badge">24 <span>dec</span></div></div>
+										<div class="sidebar-news__title">New Blog Post Title Here</div>
+										<div class="sidebar-news__info"><a href="" class="link-menu--section">In Fashion</a>&nbsp;|&nbsp;<span class="comments-count">No Comments</span></div>
+										<p>The Love Boat soon will making another the Love Boating...</p>
+										<div class="news-link__full"><a href="">Continue reading </a></div>
+									</div>
+						
+									<div class="sidebar-news__item">
+										<div class="sidebar-news__img"><img src="img/best_offers/offer_10.jpg" alt="sunglasses"><div class="news-date__badge">24 <span>dec</span></div></div>
+										<div class="sidebar-news__title">New Blog Post Title Here</div>
+										<div class="sidebar-news__info"><a href="" class="link-menu--section">In Fashion</a>&nbsp;|&nbsp;<span class="comments-count">No Comments</span></div>
+										<p>The Love Boat soon will making another the Love Boating...</p>
+										<div class="news-link__full"><a href="">Continue reading </a></div>
+									</div>
+						
+								</div>	<!-- end .sidebar-news__slider -->
+						
+							</div>
+								
+							<!-- end sidebar news -->
+						
+						</aside>
+						
+						<!-- sidebar end -->
 
 					</div>	<!-- end .shop-grid -->
 
@@ -1359,7 +1390,7 @@
 				<div class="container">
 					<div class="footer-inner">
 						<div class="footer-contact">
-							<div class="footer-logo"><a href="#" class="logo__link footer-logo__link"><img src="img/logo_footer.png" alt="logo footer"><span>supermart</span></a></div>
+							<div class="footer-logo"><a href="#" class="logo__link footer-logo__link"><img src="img/logo_footer.svg" alt="logo footer"><span>supermart</span></a></div>
 							<p>Many say exploration is part of our dest but it’s actually our duty to future and their.</p>
 								<address class="footer-address">
 									<div class="address-item">Address: <span>868 Fake Street, New York</span></div>

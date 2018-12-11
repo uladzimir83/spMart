@@ -6,10 +6,11 @@ footer
 	
 .footer-inner
 	display: flex
-	padding: 70px 0
+	flex-direction: column
+	padding: 76px 5px 0 5px
 
 .footer-contact
-	width: 27.193%
+	margin-bottom: 20px
 	p
 		color: $warm-grey-six
 		line-height: 22px
@@ -25,18 +26,34 @@ footer
 	
 
 .footer-nav__column
-	flex: 1
-	padding-left: 50px
+	border-bottom: 1px solid $white-three
+	margin-bottom: 22px
 	h3
 		color: $black-eight
 		font:
 			family: raleway
 			size: 1.071em
 			weight: 500
-		margin-bottom: 2.4em
+		margin-bottom: 1.6em
+		position: relative
 		text-transform: uppercase
+		&:after
+			background: url(../img/slider_arrow.png) no-repeat
+			content: ''
+			display: block
+			height: 8px
+			position: absolute
+			right: 30px
+			top: 48%
+			transform: rotate(90deg)
+			width: 6px
+		&.active 
+			&:after
+				transform: rotate(-90deg)
+
 
 .footer-nav__link
+	display: none
 	li
 		margin-bottom: 1.571em
 	a
@@ -48,6 +65,8 @@ footer
 
 .footer-logo__link
 	color: $black-six
+	span
+		display: inline
 
 
 .footer-bottom
