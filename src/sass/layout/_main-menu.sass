@@ -20,6 +20,7 @@
 	transition: left .5s ease-in
 	z-index: 2000
 
+/* триггер меню для мобильной версии */
 .js-main-menu
 	left: 0%
 	transition: left .5s ease-in
@@ -45,16 +46,19 @@
 	text-transform: uppercase
 	width: 100%
 
+/* кнопка бургер при открытом меню в мобильной версии */
 .main-menu__toggle
 	text-align: right
 	z-index: 1005
 
+/* секция help в одном из пунктов меню. Видна только на мобильной версии */
 .main-menu__help
 	padding: 10px 0
 	.user-assistance
 		align-items: baseline
 		display: flex
 
+/* блок с телефоном в последнем пункте меню */
 .contact-phone
 	position: absolute
 	right: 15px
@@ -65,6 +69,7 @@
 	span
 		display: none
 
+/* ссылка-кнопка с телефоном */
 .main-menu__phone
 	display: inline-block
 	height: 42px
@@ -75,6 +80,7 @@
 		color: $sunflower-yellow
 		font-size: 45px
 
+/* каталог разделов сайта */
 .catalog
 	position: relative
 
@@ -88,16 +94,7 @@
 	text-transform: uppercase
 	z-index: 10001
 
-
-.bck
-	background-color: rgba(0, 0, 0, .3)
-	display: none
-	position: absolute
-	z-index: 10000
-	height: 200%
-	width: 100%
-
-
+/* кнопка-бургер для переключения меню каталога */
 .icon-bars
 	cursor: pointer
 	&:before
@@ -111,6 +108,7 @@
 	width: 100%
 	z-index: 10001
 
+/* триггер каталога */
 .js-toggle__categories
 	display: block
 

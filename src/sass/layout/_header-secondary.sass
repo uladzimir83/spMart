@@ -13,10 +13,11 @@
 @import "_main-menu.sass"
 
 .header-top
-	background-color: $cornflower-blue
+	background-color: $white-eleven
+	border-bottom: 1px solid $white-four
 	height: 42px
 	a
-		color: $white
+		color: $warm-grey-four
 		&:hover
 			color: $charcoal-grey
 
@@ -25,7 +26,7 @@
 
 .header-top__registration
 	display: flex
-	color: $white
+	color: $warm-grey-four
 	a
 		font-size: .8571em
 		letter-spacing: 0.4px
@@ -33,7 +34,7 @@
 /* блок выбора валюты */
 
 .header-top__currency
-	border-left: 1px solid rgba(255, 255, 255, .1)
+	border-left: 1px solid rgba(0, 0, 0, .1)
 	margin-left: 1.42857em
 	padding-left: 1.42857em
 	text-transform: uppercase
@@ -46,7 +47,7 @@
 		display: block
 		border-style: solid
 		border-width: 5px 5px 0 5px
-		border-color: $white transparent transparent transparent
+		border-color: $warm-grey-four transparent transparent transparent
 		position: absolute
 		bottom: 5px
 		left: 53px
@@ -55,7 +56,7 @@
 		transform: rotate(180deg)
 
 .currency-list
-	background-color: $cornflower-blue
+	background-color: $white-eleven
 	display: none
 	left: 8px
 	padding: 10px
@@ -76,11 +77,11 @@
 
 .help-link,
 .wishlist-link
-	color: $white
+	color: $warm-grey-four
 	margin-left: 20px
 	padding-right: 15px
 	a
-		color: $white
+		color: $warm-grey-four
 		font-size: .857em
 		letter-spacing: .4px
 
@@ -101,7 +102,7 @@
 		display: block
 		border-style: solid
 		border-width: 5px 5px 0 5px
-		border-color: $white transparent transparent transparent
+		border-color: $warm-grey-four transparent transparent transparent
 		position: absolute
 		bottom: 5px
 		right: -22%
@@ -110,20 +111,20 @@
 		transform: rotate(180deg)
 
 .flag
-	color: $white
+	color: $warm-grey-four
 	cursor: pointer
 	height: 19px
 	padding-left: 24px
 	width: 100%
 
 .flag-russia
-	background: url(../img/russia.svg) 0 0 no-repeat
+	background: url(/img/russia.svg) 0 0 no-repeat
 
 .flag-britain
-	background: url(../img/united-kingdom.svg) 0 0 no-repeat
+	background: url(/img/united-kingdom.svg) 0 0 no-repeat
 
 .language-list
-	background-color: $cornflower-blue
+	background-color: $white-eleven
 	display: none
 	left: 12px
 	padding: 9px
@@ -157,7 +158,7 @@
 /* .header-bottom состоит из двух частей: линия с logo, search, cart и линия с main menu  */
 
 .header-bottom
-	background-color: $dark-sky-blue
+	background-color: $white
 
 .header-bottom-search
 	padding: 15px 0
@@ -168,7 +169,7 @@
 	text-align: center
 
 .logo__link
-	color: $white
+	color: $black-six
 	font:
 		family: raleway
 		size: 1.157em
@@ -180,6 +181,22 @@
 		display: block
 	img
 		width: 40px
+
+/* стили для самостоятельных компонентов шапки */
+
+.form-input
+	border: 1px solid $white-two
+
+.categories-form__block
+	border: 1px solid $white-two
+	border-right: none
+
+.header-cart
+	border: 1px solid $white-eight
+
+.main-menu
+	background-color: $dark-sky-blue
+
 
 /* media */
 
@@ -218,7 +235,7 @@
 
 	.help-link,
 	.wishlist-link
-		border-right: 1px solid rgba(255, 255, 255, .1)
+		border-right: 1px solid rgba(0, 0, 0, .1)
 		a
 			&:hover
 				color: $charcoal-grey
@@ -228,9 +245,9 @@
 	.app-link
 		background-color: rgba(0, 0, 0, .1)
 		&:hover
-			background-color: $white
+			background-color: $dodger-blue
 		&:hover .btn-app
-			color: #3576BE
+			color: $white
 
 	.language-block
 		margin: 0
@@ -266,7 +283,7 @@
 			border-bottom: none 	//пункт меню
 			padding: 0 1.25%
 			&:hover
-				background-color: #4d4d4d
+				background-color: $water-blue
 		&__link
 			font-size: .857em 	//ссылка меню
 		&__toggle
@@ -330,7 +347,7 @@
 		width: auto
 		span
 			display: inline-block
-			color: $pinkish-grey
+			color: $white
 			font-size: .857em
 			text-transform: uppercase
 

@@ -1,0 +1,29 @@
+.main-wrap
+	.breadcrumbs
+		border-bottom: 1px solid $white-two
+		padding: 2.143em 0
+
+.breadcrumbs-list
+	font:
+		family: raleway
+		size:	12px
+		weight: 600
+	text-transform: uppercase
+	li
+		display: inline-block
+		margin-right: 16px
+		position: relative
+		&:last-child
+			&:after
+				display: none
+		&:after
+			content: "/\00a0"
+			display: block
+			position: absolute
+			right: -14px
+			top: 0
+	a
+		color: $greyish-brown-two
+
+.breadcrumbs-end
+	color: $warm-grey-six

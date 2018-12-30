@@ -4,10 +4,14 @@
 footer
 	background-color: $white-nine
 	
+/* центральная часть футера */
+
 .footer-inner
 	display: flex
 	flex-direction: column
 	padding: 76px 5px 0 5px
+
+/* колонка с контактами */
 
 .footer-contact
 	margin-bottom: 20px
@@ -24,7 +28,7 @@ footer
 	a
 		color: $warm-grey-six
 	
-
+/* колонки футера, кроме колонки с контактами */
 .footer-nav__column
 	border-bottom: 1px solid $white-three
 	margin-bottom: 22px
@@ -38,7 +42,7 @@ footer
 		position: relative
 		text-transform: uppercase
 		&:after
-			background: url(../img/slider_arrow.png) no-repeat
+			background: url(/img/slider_arrow.png) no-repeat
 			content: ''
 			display: block
 			height: 8px
@@ -51,6 +55,7 @@ footer
 			&:after
 				transform: rotate(-90deg)
 
+/* список ссылок в колонках */
 
 .footer-nav__link
 	display: none
@@ -60,6 +65,7 @@ footer
 		color: $warm-grey-four
 		text-align: left
 
+	
 .footer-logo
 	margin-bottom: 16px
 

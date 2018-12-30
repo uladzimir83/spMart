@@ -1,31 +1,7 @@
 @media only screen and (min-width: 576px)
 
-	.logo__link
-		font-size: 1.857em
-		span
-			display: inline
-
-	.header-cart__link
-		height: 45px
-		padding: 13px 0
-		width: 45px
-		&:hover .icon-shopping-bag
-			color: $cornflower-blue
-
-	.form-toggle.form-submit
-		height: 45px
-		right: 150px
-		top: 0
-		width: 45px
-
 	.sidebar-products__items:last-child	
 		border-bottom: 1px solid $white-three
-
-	.header-bottom-search
-		padding: 27px 0 33px 0
-
-	.header-cart
-		top: 0
 
 	/* раздел product-categories изменить размер карточки товара */
 	.categories-example__list
@@ -42,37 +18,7 @@
 	.sidebar-products__items
 		flex: 1 0 50%
 
-	.newsletter-form
-		width: 65%
-
 @media only screen and (min-width: 768px)
-
-	.header-top
-		.user-assistance
-			align-items: center
-			display: flex
-
-	.help-link,
-	.wishlist-link
-		border-right: 1px solid rgba(255, 255, 255, .1)
-		a
-			&:hover
-				color: $charcoal-grey
-		&:hover .icon-heart-o:before
-			color: $charcoal-grey
-
-	.app-link
-		background-color: rgba(0, 0, 0, .1)
-		&:hover
-			background-color: $white
-		&:hover .btn-app
-			color: #3576BE
-
-	.language-block
-		margin: 0
-
-	.language-block__mobile
-		display: none
 
 	.top-offers
 		display: flex
@@ -82,23 +28,6 @@
 		&:last-child
 			margin-right: 0
 
-	.shop-grid
-		flex-direction: row-reverse
-		margin-top: 50px
-
-	/* размер основного раздела */
-	.shop-grid__main
-		width: calc(100% - 300px)
-
-	/* включаем поиск по сайту */
-	.header-search
-		display: block
-		width: 62%
-
-	/* прячем кнопку открытия формы поиска */
-	.form-toggle.form-submit
-		display: none
-
 	/* раздел best sellers изменяем размер карточки товара */
 	.grid-item__row
 		align-items: center
@@ -106,43 +35,6 @@
 
 	.categories-example__list
 		flex-wrap: nowrap
-
-	/* кнопка-бургер переключения меню */
-	.hamburger
-		display: none
-
-	/* корзине убираем абсолютное позиционирование, что вернет ее в правую часть экрана */
-	.header-cart
-		position: static
-
-	/* главное меню приводим в горизонтальный десктопный вид */
-	.main-menu
-		display: flex
-		height: auto
-		overflow: inherit
-		position: static
-		width: auto
-		&__item
-			border-bottom: none 	//пункт меню
-			padding: 0 1.25%
-			&:hover
-				background-color: #4d4d4d
-		&__link
-			font-size: .857em 	//ссылка меню
-		&__toggle
-			display: none 	//прячем кнопку-переключатель меню
-		.main-menu__help
-			display: none
-
-	/* смещаем таблички над пунктами меню вверх */
-	.main-menu__item .badge
-		top: -14px
-
-	.contact-phone
-		display: block
-		left: auto
-		right: 15px
-		top: 11%
 
 	.new-arrivals
 		h2
@@ -165,11 +57,6 @@
 			text-transform: uppercase
 			&:hover
 				color: $dark-sky-blue
-
-	.shop-grid__sidebar
-		margin-right: 35px
-		text-align: left
-		width: 265px
 
 	.sidebar-banner
 		display: block
@@ -335,15 +222,6 @@
 		a
 			color: $dark-sky-blue
 			text-transform: uppercase
-	
-	/* каталогу с категориями задаем нужные размеры и поля */
-	.catalog
-		margin-right: 20px
-		width: 23.7%
-
-	/* меню категорий теперь видно */
-	.catalog-wrap
-		display: block
 
 	/* главный слайдер изображений отодвинули вправо */
 
@@ -360,114 +238,9 @@
 		.grid-item
 			&:first-child
 				border-left: 1px solid $white-three
-		
-
-	.advantages__grid
-		display: flex
-		flex-wrap: nowrap
-		.advantages-grid__item
-			border-right: 1px solid $white-eight
-			flex: 1 0 25%
-
-	.contact-us
-		height: 100px
-
-	.contact-us__inner
-		align-items: center
-		display: flex
-		flex-direction: row
-		justify-content: space-between
-
-	.newsletter-header
-		margin-bottom: 0
-		width: 13%
-		span
-			line-height: normal
-
-	.newsletter-form
-		margin: 0 -67px 0 0
-		width: 43.95%
-
-	.newsletter-submit
-		width: 30%
-
-	.social-contact
-		align-items: center
-		border-left: 1px solid rgba(255, 255, 255, .15)
-		display: flex
-		padding: 0 10px
-
-	.social-contact__list
-		li
-			margin-left: 5px
-
-	.footer-inner
-		flex-direction: row
-		padding: 76px 0 0 0
-
-	.footer-contact
-		margin-bottom: 0
-		width: 27.193%
-
-	.footer-nav__column
-		border: none
-		flex: 1
-		padding-left: 50px
-		h3
-			margin-bottom: 2.4em
-			&:after
-				display: none
-				
-	.footer-nav__link
-		display: block
 
 @media only screen and (min-width: 992px)
 
-	/* форма поиска нужного размера */
-	.header-search
-		margin-left: 11%
-		width: 52.2%
-
-	/* счетчик для корзины теперь виден */
-	.header-cart__count
-		display: inline-block
-
-	/* выпдающее меню с категориями теперь видно */
-	.categories-form__block
-		display: block
-
-	/* контактный номер в меню теперь виден, а иконка для мобильной версии спрятана */
-	.main-menu__phone
-		display: inline
-		.contact-phone__num
-			background-color: $sunflower-yellow
-			display: inline-block
-			color: $black-five
-			font:
-				size: .857em
-				weight: 500
-			margin-left: 5px
-			padding: 5px 8px
-		.icon-mobile
-			display: none
-
-	.contact-phone
-		display: block
-		left: auto
-		top: 30%
-		width: auto
-		span
-			display: inline-block
-			color: $pinkish-grey
-			font-size: .857em
-			text-transform: uppercase
-
-	.catalog-item
-		padding-left: 44px
-		.icon
-			left: 20px
-
-	
 	.new-arrivals
 		h2
 			margin: 5px 0 27px
@@ -502,12 +275,6 @@
 		display: block
 		flex: 2 0 auto
 		padding: 16px
-
-	.newsletter-form
-		margin-right: 0
-
-	.newsletter-submit
-		width: 20%
 
 @media only screen and (min-width: 1200px)
 

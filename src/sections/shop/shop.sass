@@ -1,0 +1,386 @@
+
+@charset "utf-8"
+
+@import "../../sass/base/_reset.sass"
+@import "../../sass/base/_variables.sass"
+@import "../../sass/base/_tipography.sass"
+@import "../../sass/base/_fonts.sass"
+@import "../../sass/base/icomoon.scss"
+@import "../../sass/components/_breadcrumbs.sass"
+@import "../../sass/components/rating.sass"
+@import "../../sass/components/_user-action_inline.sass"
+@import "../../sass/layout/_grid.sass"
+@import "../../sass/layout/_our-advantages.sass"
+@import "../../sass/layout/_contact-us.sass"
+@import "../../sass/layout/_header-secondary.sass"
+@import "../../sass/layout/_footer.sass"
+
+
+html,
+body
+	min-height: 100%
+	margin: 0
+	padding: 0	
+	width: 100%
+
+body
+	background-color: #fff
+	font:
+		family: roboto
+		size: 14px
+		weight: 400
+	min-width: 320px
+
+img
+	height: auto
+	max-width: 100%
+
+
+.shop-grid__sidebar
+	.grid-item
+		text-align: left
+
+/* Список категорий сайдбара. Пункты. */	
+.sidebar-cat__item
+	border-bottom: 1px solid $white-two
+	position: relative
+	text-align: left
+	&:last-child
+		border-bottom: none
+	a
+		color: $warm-grey-four
+		line-height: 45px
+		padding-left: 20px
+	span
+		color: $warm-grey-five
+	&:hover
+		background-color: $white-nine
+
+/* значок плюса, для переключния выпадающего списка категорий */
+.plus-toggler
+	&:after
+		border: 1px solid $white-two
+		background-color: $white-nine
+		border-radius: 50%
+		color: $brownish-grey
+		content: '\002B'
+		cursor: pointer
+		display: inline-block
+		height: 21px
+		padding: 2px 0px 0px 6px
+		position: absolute
+		pointer-events: all
+		right: 20px
+		top: 14px
+		width: 21px
+	&.active
+		&:after
+			content: '\2212'
+
+/* вложенный список категорий */
+.sub-cat__list
+	display: none
+	a
+		display: block
+		padding-left: 40px
+		&:hover
+			color: $white
+			background-color: $greyish-brown-two
+
+/* секция фильтр сайдабра */
+.filter-section
+	h4
+		font:
+			family: raleway
+			size: .857em
+			weight: 600
+		line-height: 50px
+		margin-left: 2.08em
+		text-transform: uppercase
+		position: relative
+		&:after
+			background: url(/img/slider_arrow.png) no-repeat
+			content: ''
+			display: block
+			height: 8px
+			position: absolute
+			right: 30px
+			top: 48%
+			transform: rotate(90deg)
+			width: 6px
+		&.active 
+			&:after
+				transform: rotate(-90deg)
+
+/* стили для кастомных чекбоксов */
+
+.filter-list
+	padding-top: 30px
+	li
+		margin: 0 0 20px 20px
+
+.filter-checkbox
+	margin: 10px 0 0 20px
+	opacity: 0
+	position: absolute
+	z-index: -1
+
+.filter-checkbox + label
+	color: $warm-grey-four
+	cursor: pointer
+	padding: 0 0 0 30px
+	position: relative
+
+.filter-checkbox + label:before
+  content: ''
+  position: absolute
+  top: 3px
+  left: 0
+  width: 14px
+  height: 14px
+  border-radius: 2px
+  box-shadow: inset 0 0 5px 0 rgba(0, 0, 0, 0.3)
+
+.filter-checkbox:checked + label
+	color: $black-six
+	letter-spacing: .42px
+
+.filter-checkbox:checked + label:before
+  background: url(/img/check_bg.png) 2px 4px no-repeat
+
+.filter-list__colour
+	display: flex
+	flex-wrap: wrap
+	padding: 30px 0 0 20px
+	li
+		margin: 0 10px 10px 0
+	label
+		cursor: pointer
+		display: block
+		height: 25px
+		width: 25px
+
+.filter-checkbox__colour
+	margin: 10px 0 0 20px
+	opacity: 0
+	position: absolute
+	z-index: -1
+
+.filter-checkbox__colour:checked + label
+	box-shadow: 0 0 1px 2px #aaa
+
+
+/* секция фильтров для основной сетки товаров */
+
+.listing-conrols
+	display: flex
+	justify-content: space-between
+	margin-bottom: 24px
+
+/* правая часть с выпадающими фильтрами и переключателями отображения карточек товара */
+
+.filter-grid-togglers
+	display: flex
+
+/* обертки выпадающих списков фильтра */
+
+.filter-toggler
+	margin-right: 10px
+	position: relative
+	button
+		width: 100%
+
+.toggler__type
+	width: 200px
+
+.toggler__amount
+	width: 55px
+
+/* кнопки-переключатели фильтров */
+
+.btn-dropdown
+	background-color: $white
+	border: 1px solid $white-two
+	border-radius: 2px
+	color: $warm-grey-four
+	font-size: .857em
+	margin-right: 10px
+	padding: 10px 30px 10px 10px
+	position: relative
+	text-transform: uppercase
+	&:after
+		background: url(/img/slider_arrow.png) 0 0 no-repeat
+		content: ''
+		height: 8px
+		position: absolute
+		transform: rotate(-90deg)
+		top: 12px
+		right: 12px
+		width: 7px
+	&.active
+		&:after
+			transform: rotate(90deg)
+
+/* списки выпадающих фильтров */
+
+.grid-toggler__list
+	background-color: $white-two
+	display: none
+	position: absolute
+	width: 100%
+	li
+		padding: 10px
+	a
+		color: $warm-grey-four
+		display: block
+		font-size: .857em
+		text-transform: uppercase
+
+
+/* обертка карточек товара */
+.shop-grid__wrap
+	border-bottom: 1px solid $white-three
+	display: flex
+	flex-wrap: wrap
+	margin-bottom: 29px
+
+
+/* переключение вида карточек товара */
+.grid-view__toggler
+	border: 1px solid $white-two
+	border-radius: 2px
+	height: 37px
+	a
+		color: $warm-grey-four
+		display: inline-block
+		padding: 10px
+		&:first-child
+			border-right: 1px solid $white-two
+		&.active
+			background-color: $white-five
+			color: $greyish-brown
+
+/* ----- основная сетка товаров ----- */
+
+.shop-grid__card
+	border: 1px solid $white-three
+	border-left: none
+	border-bottom: none
+	border-radius: 2px
+	display: flex
+	flex-direction: column
+	width: 25%
+	&:nth-child(4n + 1)
+		border-left: 1px solid $white-three
+	&:hover
+		box-shadow: 0px 2px 15px 0 rgba(0, 0, 0, 0.08)
+	&:hover .user-action__list
+		display: block
+
+/* описание товара */
+.product-description
+	display: none
+
+
+/* изображение товара в карточке товара */	
+.shop-card__picture
+	margin-bottom: 58px
+	padding: 30px 10px 0 10px
+	text-align: center
+	img
+		height: 150px
+
+/* секция с ценой, рейтингом, иконками товара */
+.shop-card__info
+	position: relative
+	text-align: center
+
+.product-name
+	color: #444
+	display: block
+	font:
+		family: roboto
+		size: 1.077em
+		weight: 400
+	text-transform: none
+
+/* цена продукта */
+.product-price
+	font-weight: 500
+	margin-bottom: 35px
+
+
+/* звезды рейтинга товара */
+.product-rating
+	height: 9px
+	position: relative
+	margin: -20px auto 24px
+	width: 55px
+	z-index: -1
+
+/* список иконк для действий пользователя */	
+.user-action__list
+	bottom: 110px
+	display: none
+
+/* пункты списка иконок */
+.user-action__item
+	border: 1px solid $white-four
+	border-left: none
+	i
+		font-size: 14px
+
+/* кнопки страниц */
+.grid-page__list
+	display: flex
+	justify-content: center
+	margin-bottom: 100px
+	li
+		border: 1px solid $white-twelve
+		border-radius: 2px
+		height: 32px
+		margin-right: 5px
+		position: relative
+		text-align: center
+		width: 32px
+
+.grid-page__link
+	display: block
+	height: 100%
+	line-height: 32px
+	width: 100%
+	&.active
+		background-color: $black-six
+		color: $white
+
+.page-link__next
+	background: url(/img/slider_arrow.png) 50% no-repeat
+	transform: rotate(180deg)
+
+/* стили для переключения карточки товара в горизонтальный вид */
+
+.shop-grid__wrap__line
+	display: block
+	.shop-grid__card
+		border-left: 1px solid $white-three
+		flex-direction: row
+		padding-bottom: 35px
+		width: 100%
+	.shop-card__info
+		padding: 30px 40px 0 0
+		text-align: left
+	.shop-card__picture
+		text-align: 
+		flex: 1 0 29.5%
+	.product-description
+		color: $warm-grey-four
+		display: block
+		line-height: 22px
+		margin-bottom: 22px
+	.product-rating
+		position: absolute
+
+		
+
+
+@import "../../sass/layout-media.sass"

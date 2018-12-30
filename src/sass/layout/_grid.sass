@@ -22,3 +22,66 @@
 	display: flex
 	flex-direction: column
 	margin-top: 50px
+
+.shop-grid__sidebar
+	text-align: center
+
+/* карточка товара вертикальная удлиненная */
+
+.grid-item
+	border: 1px solid $white-three
+	border-radius: 2px
+	margin-bottom: 33px
+	margin: 0 -1px
+	position: relative
+	text-align: center
+	&:hover
+		box-shadow: 0px 2px 15px 0 rgba(0, 0, 0, 0.08)
+	&:hover .user-action__list
+		display: block
+	.product-image
+		min-height: 225px
+
+/* шапка карточки товара */	
+
+.item-header
+	height: 50px
+	h3
+		font:
+			family: raleway
+			size: 1.071em
+			weight: 600
+		line-height: 50px
+		text-transform: uppercase
+
+/* серая шапка карточки товара */
+	
+.item-header__grey
+	background-color: $white-four
+	border-bottom: 1px solid $white-three
+	h3
+		color: $black-six
+		margin-left: 25px
+
+/* голубая шапка карточки товара */
+
+.item-header__blue
+	background-color: $dark-sky-blue
+	text-align: center
+	h3
+		color: $white
+
+@media (min-width: 768px)
+	.shop-grid
+		flex-direction: row-reverse
+		margin-top: 50px
+
+	/* размер основного раздела */
+	.shop-grid__main
+		width: calc(100% - 300px)
+
+	/* размер сайдбара */
+	.shop-grid__sidebar
+		margin-right: 35px
+		text-align: left
+		width: 265px

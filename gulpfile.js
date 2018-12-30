@@ -17,20 +17,20 @@ var gulp = require('gulp'),
 var path = {
     build: { //Тут мы укажем куда складывать готовые после сборки файлы
         html: 'build/',
-        js: 'build/js/',
-        css: 'build/css/',
-        fonts: 'build/fonts/'
+        js: 'build/shop/js/',
+        css: 'build/shop/css/',
+        fonts: 'build/shop/fonts/'
     },
     src: { //Пути откуда брать исходники
         html: 'src/*.html', //Синтаксис src/*.html говорит gulp что мы хотим взять все файлы с расширением .html
-        js: 'src/js/common.js',//В стилях и скриптах нам понадобятся только main файлы
-        css: 'src/sass/main.sass',
-        fonts: 'src/fonts/**/*.*'
+        js: 'src/sections/shop/shop.js',//В стилях и скриптах нам понадобятся только main файлы
+        css: 'src/sections/shop/shop.sass',
+        fonts: 'src/**/*.*'
     },
     watch: { //Тут мы укажем, за изменением каких файлов мы хотим наблюдать
         html: 'src/**/*.html',
-        js: 'src/js/**/*.js',
-        style: 'src/sass/**/*.sass',
+        js: 'src/**/*.js',
+        style: 'src/**/*.sass',
         fonts: 'src/fonts/**/*.*'
     },
     clean: './build'
@@ -47,7 +47,8 @@ gulp.task('browserSync', function() {
 
 var config = {
   server: {
-    baseDir: "./build"
+		baseDir: "./build",
+		index: "shop.html"
   },
   tunnel: true,
   host: 'localhost',
@@ -122,7 +123,8 @@ gulp.task('watch', function(){
 gulp.task('browserSync', function() {
   browserSync.init({
     server: {
-      baseDir: './build'
+			baseDir: './build',
+			index: 'shop.html'
     },
   })
 })

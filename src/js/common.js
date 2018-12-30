@@ -1,12 +1,14 @@
-//= ../libs/jquery/jquery-3.3.1.min.js
+
 //= ../libs/slick/slick.min.js
 //= ../libs/jquery.rateit/scripts/jquery.rateit.min.js
-//= countdown.js
 
+
+//preloader
 
 $(window).on("load",function(){
 	$(".cube-loader, #cube-loader").delay(100).fadeOut().remove();  
 });
+
 
 //popup signin block
 jQuery(document).ready(function($){
@@ -21,7 +23,7 @@ jQuery(document).ready(function($){
 		$tab_signup = $form_modal_tab.children('li').eq(1).children('a'),
 		$forgot_password_link = $form_login.find('.cd-form-bottom-message a'),
 		$back_to_login_link = $form_forgot_password.find('.cd-form-bottom-message a'),
-		$sign_up = $('.sign-up');
+		$sign_up = $('.signup');
 
 	//открыть модальное окно
 	$sign_up.on('click', function(event) {
@@ -91,17 +93,8 @@ jQuery(document).ready(function($){
 		$form_login.removeClass('is-selected');
 		$form_signup.removeClass('is-selected');
 		$form_forgot_password.addClass('is-selected');
-	}
+	};
 
-	//при желании можно отключить - это просто, сообщения об ошибках при заполнении
-	$form_login.find('input[type="submit"]').on('click', function(event){
-		event.preventDefault();
-		$form_login.find('input[type="email"]').toggleClass('has-error').next('span').toggleClass('is-visible');
-	});
-	$form_signup.find('input[type="submit"]').on('click', function(event){
-		event.preventDefault();
-		$form_signup.find('input[type="email"]').toggleClass('has-error').next('span').toggleClass('is-visible');
-	});
 
 // главный слайдер на главной странице
 
@@ -346,9 +339,7 @@ $(document).mouseup(function (e){ // событие клика по веб-до�
 
 //триггер входа на сайт или регистрации
 
-$('.header-top__entry-switcher').click(function() {
 
-})
 
 });
 
